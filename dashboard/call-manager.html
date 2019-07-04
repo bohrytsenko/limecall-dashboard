@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Widget - General</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.svg">
+    <!-- style -->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <!-- build:css ../assets/css/app.min.css -->
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <!-- endbuild -->
+</head>
+<body>
+<div class="app" id="app">
+    <!-- ############ LAYOUT START-->
+    <!-- ############ Aside START-->
+    <div id="aside" class="app-aside fade box-shadow-x nav-expand white" aria-hidden="true">
+        <div class="sidenav modal-dialog dk white">
+            <!-- sidenav top -->
+            <div class="navbar lt">
+                <!-- brand -->
+                <a href="dashboard.html" class="navbar-brand">
+                    <img src="../assets/images/logo_sm.png" alt="">
+                </a>
+                <!-- / brand -->
+            </div>
+            <!-- Flex nav content -->
+            <div class="flex hide-scroll">
+                <div class="scroll">
+                    <div class="nav-stacked nav-active-theme" data-nav>
+                        <ul class="nav bg">
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard" >
+                                <a href="dashboard.html">
+                                    <span class="nav-icon"><i class="fa fa-dashboard"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Users" >
+                                <a href="users.html">
+                                    <span class="nav-icon"><i class="fa fa-user"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Leads" >
+                                <a href="leads.html">
+                                    <span class="nav-icon"><i class="fa fa-address-book"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Widget" >
+                                <a href="widget.html">
+                                    <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Settings" >
+                                <a href="settings.html">
+                                    <span class="nav-icon"><i class="fa fa-cog"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidenav bottom -->
+            <div class="no-shrink lt d-inline-flex justify-content-center flex-column">
+                <div class="nav-fold text-center">
+                    <a class="flex text-nowrap p-2-3" data-toggle="dropdown">
+                        <span class="badge badge-pill theme">Help</span>
+                    </a>
+                    <div class="dropdown-menu  w pt-0 mt-2 animate fadeIn">
+                        <a class="dropdown-item" href="#/">
+                            <span>Suggest a Feature</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Watch Tutorials</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Knowledgebase</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Contact Support</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-fold justify-content-center">
+                    <a class="d-flex p-2-3" data-toggle="dropdown">
+                        <span class="avatar w-28 grey hide">J</span>
+                        <img src="../assets/images/a0.jpg" alt="..." class="w-28 circle">
+                    </a>
+                    <div class="dropdown-menu  w pt-0 mt-2 animate fadeIn">
+                        <a class="dropdown-item" data-toggle="modal" data-target="#user" data-toggle-class="modal-open-aside" data-target="body">
+                            <span>Profile</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Invite</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Settings and Billing</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Integrations</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#/">Sign out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Aside END-->
+    <!-- ############ Content START-->
+    <div id="content" class="app-content box-shadow-0" role="main">
+        <!-- Header -->
+        <div class="content-header white  box-shadow-2" id="content-header">
+            <div class="navbar navbar-expand-lg">
+                <div class="row justify-content-between w-100">
+                    <div class="col-6 col-md-6">
+                        <!-- btn to toggle sidenav on small screen -->
+                        <a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                                <path d="M80 304h352v16H80zM80 248h352v16H80zM80 192h352v16H80z" />
+                            </svg>
+                        </a>
+                        <!-- Page title -->
+                        <div class="navbar-text nav-title flex" id="pageTitle">Dashboard</div>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex justify-content-end">
+                        <ul class="d-none d-lg-flex navbar-nav mt-2 mt-lg-0 mx-0 mx-lg-2">
+                            <li class="mr-2 ml-2 nav-item">
+                                <a href="#" class="nav-link">
+                                    Tutorials
+                                </a>
+                            </li>
+                            <li class="mr-2 ml-2">
+                                <p class="mb-0 item-except text-sm text-muted h-1x">Balance</p>
+                                <p class="mb-0 text-primary"><span>$49.12</span></p>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <a href="#" class="btn btn-rounded btn-sm primary btn-theme d-none d-lg-block">
+                                    Upgrade
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-row order-lg-2">
+                            <!-- Notification -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3" data-toggle="dropdown">
+                                    <i class="fa fa-bell text-muted"></i>
+                                    <span class="badge badge-pill up danger">5</span>
+                                </a>
+                                <!-- dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right w-md animate fadeIn mt-2 p-0">
+                                    <div class="scrollable hover" style="max-height: 250px">
+                                        <div class="list">
+                                            <div class="list-item " data-id="item-10">
+                                                <span class="w-24 avatar circle blue">
+	    	                      <span class="fa fa-google"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Postiljonen</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-6">
+                                                <span class="w-24 avatar circle brown">
+	    	                      <span class="fa fa-envelope"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Rita Ora</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Homepage mockup design
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">13:23</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-1">
+                                                <span class="w-24 avatar circle grey">
+	    	                      <span class="fa fa-comment"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Summerella</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Send you a message
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">July 21</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-14">
+                                                <span class="w-24 avatar circle brown">
+	    	                      <span class="fa fa-bell"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Brielle Williamson</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-5">
+                                                <span class="w-24 avatar circle blue-grey">
+	    	                      <span class="fa fa-github"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Radionomy</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Competitive gaming ladders
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">09:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-4">
+                                                <span class="w-24 avatar circle pink">
+	    	                      <span class="fa fa-male"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Judith Garcia</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Eddel upload a media
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">12:05</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex px-3 py-2 b-t">
+                                        <div class="flex">
+                                            <span>6 Notifications</span>
+                                        </div>
+                                        <a href="setting.html">See all
+                                            <i class="fa fa-angle-right text-muted"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- / dropdown -->
+                            </li>
+                            <!-- User dropdown menu -->
+                            <li class="dropdown d-flex align-items-center">
+                                <a href="#" data-toggle="dropdown" class="d-flex align-items-center">
+                              <span class="avatar w-32">
+                              <img src="../assets/images/a7.jpg" alt="...">
+                              </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right w pt-0 mt-2 animate fadeIn">
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#user" data-toggle-class="modal-open-aside" data-target="body">
+                                        <span>Profile</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <span>Invite</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <span>Settings and Billing</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <span>Integrations</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="signin.html">Sign out</a>
+                                </div>
+                            </li>
+                            <!-- Navarbar toggle btn -->
+                            <li class="d-lg-none d-flex align-items-center">
+                                <a href="#" class="mx-2" data-toggle="collapse" data-target="#navbarToggler">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                                        <path d="M64 144h384v32H64zM64 240h384v32H64zM64 336h384v32H64z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="content-main " id="content-main">
+            <!-- ############ Main START-->
+            <!-- ############ Main END-->
+        </div>
+        <!-- Footer -->
+        <div class="content-footer white " id="content-footer">
+            <div class="d-flex p-3">
+                <span class="text-sm text-muted flex">Limecall © 2019</span>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Content END-->
+    <!-- ############ LAYOUT END-->
+</div>
+<div class="modal fade" id="user" data-backdrop="true" aria-hidden="true">
+    <div class="modal-dialog modal-right white b-l">
+        <div class="d-flex flex-column h-100">
+            <div class="p-4 box">
+                <div class="pb-4 b-b _600">Change Profile Settings</div>
+                <form role="form" class="col-md-9 p-0 pb-5">
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>First Name</label></div>
+                        <div class="col-md-5"><input type="text" class="form-control" placeholder="Test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Email</label></div>
+                        <div class="col-md-5"><input type="email" class="form-control" placeholder="Test@test.test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Password</label></div>
+                        <div class="col-md-5"><input type="password" class="form-control"></div>
+                    </div>
+                    <button type="submit" class="btn primary mt-2">Save changes</button>
+                </form>
+                <div class="pb-4 b-b _600">Delete your account</div>
+                <button type="submit" class="btn danger mt-4">Delete account</button>
+                <p class="item-except text-sm mt-2 text-muted h-1x">Delete your account and all of your source data. This is irreversible.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- build:js ../assets/js/app.min.js -->
+<!-- jQuery -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- core -->
+<script src="../libs/pace-progress/pace.min.js"></script>
+<script src="../libs/pjax/pjax.min.js"></script>
+<script src="../assets/js/lazyload.config.js"></script>
+<script src="../assets/js/lazyload.js"></script>
+<script src="../assets/js/plugin.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scrollto.js"></script>
+<script src="../assets/js/toggleclass.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/ajax.js"></script>
+<script src="../assets/js/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>

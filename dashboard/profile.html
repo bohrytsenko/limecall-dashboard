@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.svg">
+    <!-- style -->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <!-- build:css ../assets/css/app.min.css -->
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.0/css/intlTelInput.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div class="app" id="app">
+    <!-- ############ LAYOUT START-->
+    <!-- ############ Aside START-->
+    <div id="aside" class="app-aside fade box-shadow-x nav-expand white" aria-hidden="true">
+        <div class="sidenav modal-dialog dk white">
+            <!-- sidenav top -->
+            <div class="navbar bg">
+                <!-- brand -->
+                <a href="dashboard.html" class="navbar-brand">
+                    <img src="../assets/images/logo_sm.png" alt="">
+                </a>
+                <!-- / brand -->
+            </div>
+            <!-- Flex nav content -->
+            <div class="flex hide-scroll">
+                <div class="scroll">
+                    <div class="nav-stacked nav-active-theme" data-nav>
+                        <ul class="nav bg">
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard" >
+                                <a href="dashboard.html">
+                                    <span class="nav-icon"><i class="fa fa-dashboard"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Users" >
+                                <a href="users.html">
+                                    <span class="nav-icon"><i class="fa fa-user"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Leads" >
+                                <a href="leads.html">
+                                    <span class="nav-icon"><i class="fa fa-address-book"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Widget" >
+                                <a href="widget.html">
+                                    <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Settings" >
+                                <a href="settings.html">
+                                    <span class="nav-icon"><i class="fa fa-cog"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidenav bottom -->
+            <div class="no-shrink lt d-inline-flex justify-content-center flex-column">
+                <div class="nav-fold text-center">
+                    <a class="flex text-nowrap p-2-3" data-toggle="dropdown">
+                        <span class="badge badge-pill theme">Help</span>
+                    </a>
+                    <div class="dropdown-menu  w pt-0 mt-2 animate fadeIn">
+                        <a class="dropdown-item" href="#/">
+                            <span>Suggest a Feature</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Watch Tutorials</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Knowledgebase</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Contact Support</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-fold justify-content-center">
+                    <a class="d-flex p-2-3" data-toggle="dropdown">
+                        <span class="avatar w-28 grey hide">J</span>
+                        <img src="../assets/images/a0.jpg" alt="..." class="w-28 circle">
+                    </a>
+                    <div class="dropdown-menu  w pt-0 mt-2 animate fadeIn">
+                        <a class="dropdown-item" data-toggle="modal" data-target="#user" data-toggle-class="modal-open-aside" data-target="body">
+                            <span>Profile</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Invite</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Settings and Billing</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <span>Integrations</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#/">Sign out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Aside END-->
+    <!-- ############ Content START-->
+    <div id="content" class="app-content box-shadow-0" role="main">
+        <!-- Header -->
+        <div class="content-header white  box-shadow-2" id="content-header">
+            <div class="navbar navbar-expand-lg">
+                <div class="row justify-content-between w-100">
+                    <div class="col-6 col-md-6">
+                        <!-- btn to toggle sidenav on small screen -->
+                        <a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                                <path d="M80 304h352v16H80zM80 248h352v16H80zM80 192h352v16H80z" />
+                            </svg>
+                        </a>
+                        <!-- Page title -->
+                        <div class="navbar-text nav-title flex" id="pageTitle">Dashboard</div>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex justify-content-end">
+                        <ul class="d-none d-lg-flex navbar-nav mt-2 mt-lg-0 mx-0 mx-lg-2">
+                            <li class="mr-2 ml-2 nav-item">
+                                <a href="#" class="nav-link">
+                                    Tutorials
+                                </a>
+                            </li>
+                            <li class="mr-2 ml-2">
+                                <p class="mb-0 item-except text-sm text-muted h-1x">Balance</p>
+                                <p class="mb-0 text-primary"><span>$49.12</span></p>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <a href="#" class="btn btn-rounded btn-sm primary btn-theme d-none d-lg-block">
+                                    Upgrade
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-row order-lg-2">
+                            <!-- Notification -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3" data-toggle="dropdown">
+                                    <i class="fa fa-bell text-muted"></i>
+                                    <span class="badge badge-pill up danger">5</span>
+                                </a>
+                                <!-- dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right w-md animate fadeIn mt-2 p-0">
+                                    <div class="scrollable hover" style="max-height: 250px">
+                                        <div class="list">
+                                            <div class="list-item " data-id="item-10">
+                                                <span class="w-24 avatar circle blue">
+	    	                      <span class="fa fa-google"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Postiljonen</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-6">
+                                                <span class="w-24 avatar circle brown">
+	    	                      <span class="fa fa-envelope"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Rita Ora</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Homepage mockup design
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">13:23</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-1">
+                                                <span class="w-24 avatar circle grey">
+	    	                      <span class="fa fa-comment"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Summerella</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Send you a message
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">July 21</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-14">
+                                                <span class="w-24 avatar circle brown">
+	    	                      <span class="fa fa-bell"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Brielle Williamson</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-5">
+                                                <span class="w-24 avatar circle blue-grey">
+	    	                      <span class="fa fa-github"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Radionomy</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Competitive gaming ladders
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">09:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-4">
+                                                <span class="w-24 avatar circle pink">
+	    	                      <span class="fa fa-male"></span>
+                                                </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Judith Garcia</a>
+                                                    <div class="item-except text-sm text-muted h-1x">
+                                                        Eddel upload a media
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">12:05</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex px-3 py-2 b-t">
+                                        <div class="flex">
+                                            <span>6 Notifications</span>
+                                        </div>
+                                        <a href="setting.html">See all
+                                            <i class="fa fa-angle-right text-muted"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- / dropdown -->
+                            </li>
+                            <!-- User dropdown menu -->
+                            <li class="dropdown d-flex align-items-center">
+                                <a href="#" data-toggle="dropdown" class="d-flex align-items-center">
+                              <span class="avatar w-32">
+                              <img src="../assets/images/a7.jpg" alt="...">
+                              </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right w pt-0 mt-2 animate fadeIn">
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#user" data-toggle-class="modal-open-aside" data-target="body">
+                                        <span>Profile</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <span>Invite</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <span>Settings and Billing</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <span>Integrations</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="signin.html">Sign out</a>
+                                </div>
+                            </li>
+                            <!-- Navarbar toggle btn -->
+                            <li class="d-lg-none d-flex align-items-center">
+                                <a href="#" class="mx-2" data-toggle="collapse" data-target="#navbarToggler">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                                        <path d="M64 144h384v32H64zM64 240h384v32H64zM64 336h384v32H64z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="content-main" id="content-main">
+            <div class="">
+                <div class="item">
+                    <div class="item-bg">
+                        <img src="../assets/images/a0.jpg" alt="." class="blur opacity-3">
+                    </div>
+                    <div class="p-4">
+                        <div class="row mt-3">
+                            <div class="col-sm-7">
+                                <div class="media">
+                                    <a href="#">
+                                 <span class="avatar w-96">
+                                 <img src="../assets/images/a0.jpg" alt=".">
+                                 <i class="on"></i>
+                                 </span>
+                                    </a>
+                                    <div class="media-body mx-3 mb-2">
+                                        <h4>Jean Reyes</h4>
+                                        <p class="text-muted"><span class="m-r">UX/UI Director</span>
+                                            <small>
+                                                <i class="fa fa-map-marker mr-2"></i>London, UK</small>
+                                        </p>
+                                        <div class="block clearfix mb-3">
+                                            <a href="#" class="btn btn-icon btn-social btn-rounded b-a btn-sm">
+                                                <i class="fa fa-facebook"></i>
+                                                <i class="fa fa-facebook indigo"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-icon btn-social btn-rounded b-a btn-sm">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-twitter light-blue"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-icon btn-social btn-rounded b-a btn-sm">
+                                                <i class="fa fa-google-plus"></i>
+                                                <i class="fa fa-google-plus red"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-icon btn-social btn-rounded b-a btn-sm">
+                                                <i class="fa fa-linkedin"></i>
+                                                <i class="fa fa-linkedin cyan"></i>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="btn btn-sm primary btn-rounded success active mb-2" data-toggle-class="success">
+                                            <span class="d-inline">Follow</span>
+                                            <span class="d-none">Following</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <p class="text-md profile-status">I am feeling good!</p>
+                                <button class="btn btn-sm rounded btn-outline b-success" data-toggle="collapse" data-target="#editor">Edit</button>
+                                <div class="collapse box mt-2" id="editor">
+                                    <textarea class="form-control no-border" rows="2" placeholder="Type something..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="white bg b-b px-3">
+                    <div class="row">
+                        <div class="col-sm-6 order-sm-2">
+                            <div class="py-3 text-center text-sm-right">
+                                <a href="#" class="d-inline-block px-3 text-center">
+                                    <span class="text-md d-block">2k</span>
+                                    <small class="text-xs text-muted">Followers</small>
+                                </a>
+                                <a href="#" class="d-inline-block px-3 b-l b-r text-center">
+                                    <span class="text-md d-block">250</span>
+                                    <small class="text-xs text-muted">Following</small>
+                                </a>
+                                <a href="#" class="d-inline-block px-3 text-center">
+                                    <span class="text-md d-block">89</span>
+                                    <small class="text-xs text-muted">Activities</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 order-sm-1">
+                            <div class="py-4 clearfix nav-active-theme">
+                                <ul class="nav nav-pills nav-sm">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#" data-toggle="tab" data-target="#tab_1">Settings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" data-toggle="tab" data-target="#tab_2">Stream</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" data-toggle="tab" data-target="#tab_3">Friends</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" data-toggle="tab" data-target="#tab_4">Profile</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="tab_1">
+                                   <div class="box row">
+                                       <form role="form" class="pt-4 pb-4 col-md-9">
+                                           <div class="form-group row">
+                                               <div class="col-md-7"><label>First Name</label></div>
+                                               <div class="col-md-5"><input type="text" class="form-control"></div>
+                                           </div>
+                                           <div class="form-group row">
+                                               <div class="col-md-7"><label>Last Name</label></div>
+                                               <div class="col-md-5"><input type="text" class="form-control"></div>
+                                           </div>
+                                           <div class="form-group row">
+                                               <div class="col-md-7"><label>Email</label></div>
+                                               <div class="col-md-5"><input type="email" class="form-control"></div>
+                                           </div>
+                                           <div class="form-group row">
+                                               <div class="col-md-7"><label>Timezone</label></div>
+                                               <div class="col-md-5">
+                                                   <select class="form-control input-c">
+                                                       <option>1</option>
+                                                       <option>2</option>
+                                                       <option>3</option>
+                                                       <option>4</option>
+                                                   </select>
+                                               </div>
+                                           </div>
+                                           <div class="form-group row">
+                                               <div class="col-md-7"><label>Address</label></div>
+                                               <div class="col-md-5"><input type="text" class="form-control"></div>
+                                           </div>
+                                           <div class="form-group row">
+                                               <div class="col-md-7"><label>Phone</label></div>
+                                               <div class="col-md-5"><input type="tel" class="form-control" id="phone"></div>
+                                           </div>
+                                           <button type="submit" class="btn primary mt-2">Save</button>
+                                       </form>
+                                   </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab_2">
+                                    <div class="streamline">
+                                        <div class="sl-item b-success">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">2 minutes ago</div>
+                                                <p>Check your Internet connection</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item b-info">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">9:30</div>
+                                                <p>Meeting with tech leader</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item b-primary">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">8:30</div>
+                                                <p>Call to customer
+                                                    <a href="#" class="text-primary">Jacob</a> and discuss the detail.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item b-warning">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">Wed, 25 Mar</div>
+                                                <p>Finished task
+                                                    <a href="#" class="text-primary">Testing</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">Thu, 10 Mar</div>
+                                                <p>Trip to the moon</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">Sat, 5 Mar</div>
+                                                <p>Prepare for presentation</p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">Sun, 11 Feb</div>
+                                                <p>
+                                                    <a href="#" class="text-primary">Jessi</a> assign you a task
+                                                    <a href="#" class="text-primary">Mockup Design</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-content">
+                                                <div class="sl-date text-muted">Thu, 17 Jan</div>
+                                                <p>Follow up to close deal</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab_3">
+                                    <div class="row row-sm">
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a0.jpg" alt="...">
+                                          <i class="on avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Crystal Guerrero</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Designer, Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a1.jpg" alt="...">
+                                          <i class="on avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">James Garcia</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Writter, Mag Editor</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a2.jpg" alt="...">
+                                          <i class="away avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Jean Schneider</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Designer, Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a3.jpg" alt="...">
+                                          <i class="busy avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Joe Holmes</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Designer, Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a4.jpg" alt="...">
+                                          <i class="on avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Judith Garcia</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Writter, Mag Editor</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a5.jpg" alt="...">
+                                          <i class="on avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Judy Woods</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Designer, Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a6.jpg" alt="...">
+                                          <i class="on avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">OlsJesse Russell</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Designer, Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a7.jpg" alt="...">
+                                          <i class="away avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Richard Carr</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Writter, Mag Editor</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar">
+                                          <img src="../assets/images/a8.jpg" alt="...">
+                                          <i class="busy avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Sara King</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Designer, Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar amber">
+                                          D
+                                          <i class="busy avatar-bottom"></i>
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Douglas Torres</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                          <span class="w-40 avatar blue">
+                                          J
+                                          </span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Jeremy Scott</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <div class="list-item box r mb-2">
+                                                <a href="#">
+                                                    <span class="w-40 avatar green">M</span>
+                                                </a>
+                                                <div class="list-body">
+                                                    <div class="text-ellipsis">
+                                                        <a href="#">Melissa Garza</a>
+                                                    </div>
+                                                    <small class="text-muted text-ellipsis">Blogger</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab_4">
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <small class="text-muted">Cell Phone</small>
+                                            <div class="_500">1243 0303 0333</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <small class="text-muted">Family Phone</small>
+                                            <div class="_500">+32(0) 3003 234 543</div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <small class="text-muted">Reporter</small>
+                                            <div class="_500">Coch Jose</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <small class="text-muted">Manager</small>
+                                            <div class="_500">James Richo</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted">Bio</small>
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris
+                                            at pellentesque volutpat. Phasellus at ultricies neque, quis malesuada augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="content-footer white " id="content-footer">
+            <div class="d-flex p-3">
+                <span class="text-sm text-muted flex">© Copyright. Flatfull</span>
+                <div class="text-sm text-muted">Version 1.2.0</div>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Content END-->
+    <!-- ############ LAYOUT END-->
+</div>
+<div class="modal fade" id="user-l" data-backdrop="true" aria-hidden="true">
+    <div class="modal-dialog modal-left w-xl white b-r">
+        <div class="d-flex flex-column h-100 light bg" id="chat-list" data-plugin="chat">
+            <div class="navbar white lt box-shadow d-flex">
+                  <span class="text-md text-ellipsis">
+                  Make a Wish
+                  </span>
+                <a data-dismiss="modal" class="ml-auto">
+                    <span class="text-md text-lg l-h-1x">&times;</span>
+                </a>
+            </div>
+            <div class="scrollable hover">
+                <div class="p-3">
+                    <div class="chat-list">
+                        <div class="form-group row">
+                            <form role="form" class="col-md-12">
+                                <label class="col-form-label">I wish this page would....</label>
+                                <textarea class="form-control" rows="6" placeholder="Type a suggestion"></textarea>
+                                <button type="submit" class="btn primary mt-2">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="user" data-backdrop="true" aria-hidden="true">
+    <div class="modal-dialog modal-right white b-l">
+        <div class="d-flex flex-column h-100">
+            <div class="p-4 box">
+                <div class="pb-4 b-b _600">Change Profile Settings</div>
+                <form role="form" class="col-md-9 p-0 pb-5">
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>First Name</label></div>
+                        <div class="col-md-5"><input type="text" class="form-control" placeholder="Test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Email</label></div>
+                        <div class="col-md-5"><input type="email" class="form-control" placeholder="Test@test.test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Password</label></div>
+                        <div class="col-md-5"><input type="password" class="form-control"></div>
+                    </div>
+                    <button type="submit" class="btn primary mt-2">Save changes</button>
+                </form>
+                <div class="pb-4 b-b _600">Delete your account</div>
+                <button type="submit" class="btn danger mt-4">Delete account</button>
+                <p class="item-except text-sm mt-2 text-muted h-1x">Delete your account and all of your source data. This is irreversible.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- build:js ../assets/js/app.min.js -->
+<!-- jQuery -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- core -->
+<script src="../libs/pace-progress/pace.min.js"></script>
+<script src="../libs/pjax/pjax.min.js"></script>
+<script src="../assets/js/lazyload.config.js"></script>
+<script src="../assets/js/lazyload.js"></script>
+<script src="../assets/js/plugin.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scrollto.js"></script>
+<script src="../assets/js/toggleclass.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/ajax.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.0/js/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input);
+</script>
+<!-- endbuild -->
+</body>
+</html>
