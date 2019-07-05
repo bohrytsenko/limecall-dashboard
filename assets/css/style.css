@@ -47,6 +47,10 @@ body {
     left: 50%;
 }
 
+.int_logo img {
+    width: 250px;
+}
+
 @media screen and (max-width: 767px) {
     .modal.fade .modal-right {
         left: 5%;
