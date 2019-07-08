@@ -63,3 +63,9 @@ body {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .app-aside .sidenav {
+        width: 90px;
+    }
+}
+
