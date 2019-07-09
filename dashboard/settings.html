@@ -380,15 +380,15 @@
                                                             <div class="col-md-7"><label>First Name</label></div>
                                                             <div class="col-md-5"><input type="text" class="form-control"></div>
                                                         </div>
-                                                        <div class="pt-4 form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-md-7"><label>Last Name</label></div>
                                                             <div class="col-md-5"><input type="text" class="form-control"></div>
                                                         </div>
-                                                        <div class="pt-4 form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-md-7"><label>Email</label></div>
                                                             <div class="col-md-5"><input type="email" class="form-control"></div>
                                                         </div>
-                                                        <div class="pt-4 form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-md-7"><label>Timezone</label></div>
                                                             <div class="col-md-5">
                                                                 <select class="form-control input-c">
@@ -399,11 +399,11 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="pt-4 form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-md-7"><label>Address</label></div>
                                                             <div class="col-md-5"><input type="text" class="form-control"></div>
                                                         </div>
-                                                        <div class="pt-4 form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-md-7"><label>Phone</label></div>
                                                             <div class="col-md-5"><input type="tel" class="form-control" id="phone"></div>
                                                         </div>
@@ -419,11 +419,11 @@
                                                             <div class="col-md-7"><label>Current Password</label></div>
                                                             <div class="col-md-5"><input type="password" class="form-control"></div>
                                                         </div>
-                                                        <div class="pt-4 form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-md-7"><label>New Password Name</label></div>
                                                             <div class="col-md-5"><input type="password" class="form-control"></div>
                                                         </div>
-                                                        <div class="pt-4 form-group row">
+                                                        <div class="form-group row">
                                                             <div class="col-md-7"><label>Conform Password</label></div>
                                                             <div class="col-md-5"><input type="password" class="form-control"></div>
                                                         </div>
@@ -481,7 +481,8 @@
                                             <div class="nav nav-md">
                                                 <a class="nav-link active" href="#" data-toggle="tab" data-target="#billing-1">Plans</a>
                                                 <a class="nav-link " href="#" data-toggle="tab" data-target="#billing-2">Invoice History</a>
-                                                <a class="nav-link " href="#" data-toggle="tab" data-target="#billing-3">Payment information</a>
+                                                <a class="nav-link " href="#" data-toggle="tab" data-target="#billing-3">Billing Information</a>
+                                                <a class="nav-link " href="#" data-toggle="tab" data-target="#billing-6">Payment Methods</a>
                                                 <a class="nav-link " href="#" data-toggle="tab" data-target="#billing-4">Notification Settings</a>
                                                 <a class="nav-link " href="#" data-toggle="tab" data-target="#billing-5">Usage</a>
                                             </div>
@@ -493,7 +494,7 @@
                                                 <div class="p-4 box w-100-md">
                                                     <div class="pb-4 b-b _600">Current Plan</div>
                                                     <div class="pt-4 form-group row">
-                                                        <div class="col-md-3"><label><b>Integration startup + Warehouse Limited</b></label></div>
+                                                        <div class="col-md-3"><label>Integration startup + Warehouse Limited</label></div>
                                                         <div class="col-md-2">
                                                             <p>Legacy Plan</p>
                                                         </div>
@@ -505,7 +506,7 @@
                                                 <div class="p-4 box">
                                                     <div class="pb-4 b-b _600">Plan Options</div>
                                                     <div class="pt-4 form-group row">
-                                                        <div class="col-md-3"><label><b>Developer</b></label></div>
+                                                        <div class="col-md-3"><label>Developer</label></div>
                                                         <div class="col-md-2">
                                                             <p class="mb-0">Free</p>
                                                             <p class="item-except text-sm text-muted h-1x">Up to 1,000 MTU</p>
@@ -514,8 +515,8 @@
                                                             <button class="btn btn-fw primary">Downgrade</button>
                                                         </div>
                                                     </div>
-                                                    <div class="pt-4 form-group row">
-                                                        <div class="col-md-3"><label><b>Team</b></label></div>
+                                                    <div class="form-group row">
+                                                        <div class="col-md-3"><label>Team</label></div>
                                                         <div class="col-md-2">
                                                             <p class="mb-0">$120 per month</p>
                                                             <p class="item-except text-sm text-muted h-1x">10 Seats</p>
@@ -524,8 +525,8 @@
                                                             <button class="btn btn-fw primary">Try Team</button>
                                                         </div>
                                                     </div>
-                                                    <div class="pt-4 form-group row">
-                                                        <div class="col-md-3"><label><b>Business</b></label></div>
+                                                    <div class="form-group row">
+                                                        <div class="col-md-3"><label>Business</label></div>
                                                         <div class="col-md-2">
                                                             <p class="mb-0">Premium Features</p>
                                                             <p class="item-except text-sm text-muted h-1x">Unlimited Seats</p>
@@ -567,38 +568,49 @@
                                             </div>
                                             <div class="tab-pane" id="billing-3">
                                                 <div class="p-4 box w-100-md">
-                                                    <div class="pb-4 b-b _600">Payment Information</div>
-                                                    <div class="pt-4 form-group row">
-                                                        <div class="col-md-5">
-                                                            <textarea class="form-control" rows="3" readonly placeholder="MasterCard&#10; **** **** **** 0848&#10; Expires 2/2021"></textarea>
-                                                        </div>
-                                                        <div class="col-md-7">
-                                                            <a class="btn btn-fw primary text-white" data-toggle="modal" data-target="#m-a-a" data-toggle-class="fade-up" data-toggle-class-target="#animate">Edit</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pb-4 b-b _600">Receipt Information</div>
+                                                    <div class="pb-4 b-b _600">Billing Information</div>
                                                     <form role="form" class="pt-4 pl-0 pr-0 col-lg-9">
                                                         <div class="form-group row">
-                                                            <div class="col-md-5"><label>Name</label></div>
+                                                            <div class="col-md-5"><label>First Name</label></div>
                                                             <div class="col-md-7"><input type="text" name="card-number" class="form-control" placeholder="Name"></div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <div class="col-md-5"><label>Address</label></div>
-                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="Address"></div>
+                                                            <div class="col-md-5"><label>Last Name</label></div>
+                                                            <div class="col-md-7"><input type="text" name="card-number" class="form-control" placeholder="Surname"></div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <div class="col-md-5"><label>City</label></div>
-                                                            <div class="col-md-7"><input type="text" name="expiry" class="form-control" placeholder="City"></div>
+                                                            <div class="col-md-5"><label>Email</label></div>
+                                                            <div class="col-md-7"><input type="email" class="form-control" placeholder="email@email.com"></div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-5"><label>Company Name</label></div>
+                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="Name"></div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-5"><label>Line 1</label></div>
+                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="Address line 1"></div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-5"><label>Line 2</label></div>
+                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="Address line 2"></div>
                                                         </div>
                                                         <div class="form-group row">
                                                             <div class="col-md-5"><label>Country</label></div>
-                                                            <div class="col-md-7"><input type="text" name="cvc" class="form-control" placeholder="Country"></div>
+                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="UK"></div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <div class="col-md-5"><label>Zip Code</label></div>
-                                                            <div class="col-md-7"><input type="text" name="cvc" class="form-control" placeholder="Zip"></div>
+                                                            <div class="col-md-5"><label>City</label></div>
+                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="London"></div>
                                                         </div>
-                                                        <button type="submit" class="btn primary mt-2">Save changes</button>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-5"><label>State</label></div>
+                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="State"></div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-5"><label>ZIP</label></div>
+                                                            <div class="col-md-7"><input type="text" class="form-control" placeholder="ZIP"></div>
+                                                        </div>
+                                                        <button type="submit" class="btn primary mt-2">Update your billing information</button>
                                                     </form>
                                                 </div>
                                             </div>
@@ -684,7 +696,7 @@
                                                                     <p>09/6/2019-Current</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="pt-4 form-group row">
+                                                            <div class="form-group row">
                                                                 <div class="col-md-5"><label>API Calls</label></div>
                                                                 <div class="col-md-7">
                                                                     <div class="progress mb-2">
@@ -694,7 +706,7 @@
                                                                     <p class="item-except text-sm text-muted h-1x">Included in base rate: 5,000,000</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="pt-4 form-group row">
+                                                            <div class="form-group row">
                                                                 <div class="col-md-5"><label>Warehouse Rows</label></div>
                                                                 <div class="col-md-7">
                                                                     <div class="progress mb-2">
@@ -714,17 +726,60 @@
                                                             </div>
                                                             <div class="pt-4 form-group row">
                                                                 <div class="col-md-12">
-                                                                    <p><b>500.0 Thousand Warehouse Rows</b></p>
+                                                                    <p>500.0 Thousand Warehouse Rows</p>
                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi dolore eaque natus, quasi quo. Architecto, beatae, consequuntur deleniti, ducimus eum fuga laboriosam necessitatibus optio rem reprehenderit vitae voluptatum?</p>
                                                                 </div>
                                                             </div>
                                                             <div class="pt-4 form-group row">
                                                                 <div class="col-md-12">
-                                                                    <p><b>5.0 Million API Calls</b></p>
+                                                                    <p>5.0 Million API Calls</p>
                                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi dolore eaque natus, quasi quo. Architecto, beatae, consequuntur deleniti, ducimus eum fuga laboriosam necessitatibus optio rem reprehenderit vitae voluptatum?</p>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="billing-6">
+                                                <div class="p-4 box w-100-md">
+                                                    <div class="pb-4 b-b _600">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                Payment Methods
+                                                            </div>
+                                                            <div class="col-lg-6 text-right">
+                                                                <a class="btn btn-fw primary text-white active" data-toggle="modal" data-target="#m-a-a" data-toggle-class="fade-up" data-toggle-class-target="#animate">Add New Payment Method</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="mt-4 box">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>ID</th>
+                                                                <th>Type</th>
+                                                                <th>Reference Id</th>
+                                                                <th>Status</th>
+                                                                <th>Identity</th>
+                                                                <th>Kind</th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>29</td>
+                                                                <td>Card</td>
+                                                                <td>tok_Fasdfsdf4DF42</td>
+                                                                <td>Valid</td>
+                                                                <td>******1111</td>
+                                                                <td>Secondary</td>
+                                                                <td>
+                                                                    <a class="d-block item-except text-sm text-muted h-1x" href="">Make Primary Delete</a>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
@@ -743,15 +798,15 @@
                                             <div class="col-md-7"><label>Client ID</label></div>
                                             <div class="col-md-5"><input type="text" class="form-control" value="453tfh3fg3555wr" readonly></div>
                                         </div>
-                                        <div class="pt-4 form-group row">
+                                        <div class="form-group row">
                                             <div class="col-md-7"><label>Public Key</label></div>
                                             <div class="col-md-5"><input type="text" class="form-control" value="3455fgfg45355gf" readonly></div>
                                         </div>
-                                        <div class="pt-4 form-group row">
+                                        <div class="form-group row">
                                             <div class="col-md-7"><label>Secret</label></div>
                                             <div class="col-md-5"><input type="password" class="form-control" value="666655556664" readonly></div>
                                         </div>
-                                        <div class="pt-4 form-group row">
+                                        <div class="form-group row">
                                             <div class="col-md-7"><label>Only you have access to this information</label></div>
                                             <div class="col-md-5"><a href="users.html" class="btn btn-fw primary">Manage Team</a></div>
                                         </div>
@@ -968,8 +1023,8 @@
                                             <div class="tab-pane active" id="call-1">
                                                 <div class="p-4 box w-100-md">
                                                     <div class="pb-4 b-b _600">General</div>
-                                                    <form role="form" class="pt-4 col-md-9">
-                                                        <div class="form-group row">
+                                                    <form role="form" class="col-md-9 p-0">
+                                                        <div class="pt-4 form-group row">
                                                             <div class="col-md-7"><label>Widget Name</label></div>
                                                             <div class="col-md-5"><input type="text" class="form-control"></div>
                                                         </div>
@@ -1051,8 +1106,8 @@
                                             <div class="tab-pane" id="call-2">
                                                 <div class="p-4 box w-100-md">
                                                     <div class="pb-4 b-b _600">Widget Button Design</div>
-                                                    <form role="form" class="pt-4 col-md-9">
-                                                        <div class="form-group row">
+                                                    <form role="form" class="col-md-9 p-0">
+                                                        <div class="pt-4 form-group row">
                                                             <div class="col-md-7">
                                                                 <label>Show Widget Button</label>
                                                             </div>
@@ -1119,8 +1174,8 @@
                                             <div class="tab-pane" id="call-3">
                                                 <div class="p-4 box w-100-md">
                                                     <div class="pb-4 b-b _600">Widget Behavior</div>
-                                                    <form role="form" class="pt-4 col-md-9">
-                                                        <div class="form-group row">
+                                                    <form role="form" class="col-md-9 p-0">
+                                                        <div class="pt-4 form-group row">
                                                             <div class="col-md-7">
                                                                 <label class="row">
                                                                     <div class="col-md-12 form-inline">
@@ -1215,8 +1270,8 @@
                                                         Widget Page Configurations
                                                         <p class="item-except text-sm mb-0 text-muted h-1x">(Show widget on all pages, or choose the pages you want o include the widget in)</p>
                                                     </div>
-                                                    <form role="form" class="pt-4 col-md-9">
-                                                        <div class="form-group row">
+                                                    <form role="form" class="col-md-9 p-0">
+                                                        <div class="pt-4 form-group row">
                                                             <div class="col-md-7">
                                                                 <label class="row">
                                                                     <div class="col-md-12 form-inline">
@@ -1305,12 +1360,12 @@
                                 <div class="tab-content">
                                     <form role="form" class="p-4 col-md-12">
                                         <div class="form-group row">
-                                            <div class="col-md-5"><label>Card Number</label></div>
-                                            <div class="col-md-7"><input type="text" name="card-number" class="form-control" placeholder="**** **** **** ****"></div>
-                                        </div>
-                                        <div class="form-group row">
                                             <div class="col-md-5"><label>Name on Card</label></div>
                                             <div class="col-md-7"><input type="text" class="form-control" placeholder="Name Surname"></div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-5"><label>Card Number</label></div>
+                                            <div class="col-md-7"><input type="text" name="card-number" class="form-control" placeholder="**** **** **** ****"></div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-md-5"><label>Card Expiration</label></div>
@@ -1320,7 +1375,7 @@
                                             <div class="col-md-5"><label>CVC Code</label></div>
                                             <div class="col-md-7"><input type="text" name="cvc" class="form-control" placeholder="CVC"></div>
                                         </div>
-                                        <button type="submit" class="btn primary mt-2">Save changes</button>
+                                        <button type="submit" class="btn primary mt-2">Add</button>
                                         <button type="submit" class="btn danger mt-2">Cancel</button>
                                     </form>
                                 </div>
