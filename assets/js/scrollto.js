@@ -18,3 +18,63 @@
         }, 600, 'easeInOutExpo');
 	});
 })(jQuery);
+
+$(document).ready(function(){
+
+    // Checkbox line-through
+
+    $('.intro_list input').on('click', function(){
+        if($(this).prop('checked')){
+            $(this).parent().closest('label').addClass('line-through');
+        }
+        else {
+            $(this).parent().closest('label').removeClass('line-through');
+        }
+    });
+
+    $("input[type='checkbox'].intro_check").change(function(){
+        var a = $("input[type='checkbox'].intro_check");
+        if(a.length == a.filter(":checked").length){
+        	$('.intro_list').hide();
+        	$('.intro_congrats').show();
+        	$('.intro_undo').show();
+        	$('.intro_to').hide();
+        }
+    });
+
+    // Modal show
+
+    $('.intro_show').on('click', function () {
+    	$('.show_bl').hide();
+        $('.intro').fadeIn();
+    });
+
+    $('.resources_show').on('click', function () {
+        $('.show_bl').hide();
+        $('.resources').fadeIn();
+    });
+
+    $('.notification_show').on('click', function () {
+        $('.show_bl').hide();
+        $('.notification').fadeIn();
+    });
+
+    // Modal close
+
+	$('.intro_top__close').on('click', function () {
+		$('.intro').fadeOut();
+        $('.resources').fadeOut();
+        $('.notification').fadeOut();
+    });
+
+	// Undo
+
+    $('.intro_undo').on('click', function () {
+        $('.intro_list').show();
+        $('.intro_congrats').hide();
+        $(this).hide();
+        $('.intro_to').show();
+        $('.intro_list input').prop('checked', false);
+        $('.intro_list input').parent().closest('label').removeClass('line-through');
+    });
+});
