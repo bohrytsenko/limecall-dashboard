@@ -21,6 +21,15 @@
 
 $(document).ready(function(){
 
+    // $(document).on('click',".modal-open", function(e) {
+    //     $('#aside').hide();
+    //     $('body').removeClass('modal-open');
+    //     $('body').removeClass('pace-done');
+    //     $('body').addClass('pace-running');
+    //     $('.modal-backdrop').hide();
+    // });
+
+
     // Checkbox line-through
 
     $('.intro_list input').on('click', function(){

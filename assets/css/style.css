@@ -180,6 +180,12 @@ iframe {
     .modal.fade .modal-right {
         left: 5%;
     }
+    .intro, .resources, .notification {
+        left: 0;
+    }
+    .video_modal iframe {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
