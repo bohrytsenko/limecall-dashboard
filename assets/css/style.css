@@ -176,6 +176,12 @@ iframe {
     align-items: flex-start!important;
 }
 
+/*Leads*/
+
+.lead_select .form_sel {
+    width: 100px;
+}
+
 @media screen and (max-width: 767px) {
     .modal.fade .modal-right {
         left: 5%;
@@ -185,6 +191,9 @@ iframe {
     }
     .video_modal iframe {
         width: 100%;
+    }
+    .lead_select {
+        justify-content: flex-start!important;
     }
 }
 
