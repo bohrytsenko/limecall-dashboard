@@ -46,6 +46,33 @@ $(function() {
 
 $(document).ready(function(){
 
+    // Modal fade on load
+
+    $(window).on('load',function(){
+        $('#m-wizard').modal('show');
+    });
+
+    // Wizard if checked
+
+    $(function()
+    {
+        $('.if_check').change(function()
+        {
+            if ($(this).is(':checked')) {
+                $('.if_check__block').show();
+            } else {
+                $('.if_check__block').hide();
+            }
+        });
+    });
+
+    // Click change text
+
+    $(".change_text").click(function(event) {
+        event.preventDefault();
+        $('.email_text').focus();
+    });
+
     // $(document).on('click',".modal-open", function(e) {
     //     $('#aside').hide();
     //     $('body').removeClass('modal-open');

@@ -390,6 +390,27 @@ body .ativities_modal__tab .nav-link{
     height: 25px;
 }
 
+/*Wizard*/
+
+.wizard_tabs li {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.wizard_tabs li a {
+    width: 100%;
+    background: #f9fafc;
+    padding: 3px 0;
+}
+
+.wizard_tabs .nav-link.active, .wizard_tabs .show>.nav-link {
+    background-color: #53a6fa;
+}
+
+.if_check__block {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .modal.fade .modal-right {
         left: 5%;
