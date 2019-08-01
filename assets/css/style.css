@@ -10,8 +10,64 @@ iframe {
     max-width: 100%;
 }
 
+.primary {
+    color: white;
+}
+
+.header_toggle i:before {
+    background-color: red;
+}
+
+#aside .dropdown-menu.show {
+    left: 100% !important;
+}
+
+.dropdown-menu.show {
+    border: 1px solid #e1e6eb;
+    box-shadow: 0 3px 10px rgba(71, 80, 89, 0.15);
+}
+
+.nav-stacked .nav > li:not(.nav-header) {
+    padding: 5px 0.75rem;
+}
+
+.link_btm {
+    padding: 5px 0.75rem;
+}
+
+.link_btm .link_btm__badge {
+    display: block;
+    border-radius: 3px;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.link_btm:hover .link_btm__badge {
+    background-color: rgba(255, 255, 255, 0.065);
+}
+
+
+.nav-active-border .nav-link:hover:before, .nav-active-border .nav-link:focus:before, .nav-active-border .nav-link.active:before {
+    border-color: #53a6fa;
+}
+
 .app-aside .navbar {
     text-align: center;
+    background-color: #3172b3;
+    margin-bottom: 20px;
+}
+
+.app-aside .sidenav, .app-aside .no-shrink, .app-aside .bg {
+    background-color: #3172b3;
+}
+
+.nav-fold a .badge i {
+    color: white;
+}
+
+.sidenav .nav-icon {
+    opacity: 1;
+    color: white;
 }
 
 .app-aside .navbar-brand {
@@ -180,6 +236,158 @@ iframe {
 
 .lead_select .form_sel {
     width: 100px;
+}
+
+.dropdown_leads {
+    height: 265px;
+    overflow: scroll;
+}
+
+/*Activities*/
+
+.tabs_border {
+    display: inline-flex;
+    border: 1px solid #e1e6eb!important;
+    border-radius: 5px;
+}
+
+.tabs_border li {
+    width: 60px;
+    height: 33px;
+    border-radius: 5px;
+    border: 0!important;
+    margin-bottom: 0!important;
+}
+
+.tabs_border li a {
+    border-radius: 5px;
+    border: 0!important;
+    padding: 0;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    font-size: 12px;
+}
+
+.table_activities tr {
+    border: 1px solid #e1e6eb!important;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 5px 0;
+    display: block;
+}
+
+.table_activities tr:first-child {
+    margin-top: 0;
+}
+
+.table_activities tr:hover {
+    transition: 0.3s;
+    border: 1px solid#53a6fa!important;
+    box-shadow: 0 0 4px 0 rgba(50,50,50,.3);
+}
+
+.table_activities tr td {
+    border: 0!important;
+}
+
+.table_activities__icon {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.table_activities__audio {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+body .ativities_modal__tab .nav-link.active{
+    border-bottom-color: rgba(120, 130, 140, 0.13);
+}
+
+body .ativities_modal__tab .nav-link{
+    border-color: rgba(120, 130, 140, 0.13);
+}
+
+.activities_select select {
+    width: 120px;
+}
+
+.activities_select .select2-selection__arrow {
+    top: 0!important;
+}
+
+.activities_select span {
+    font-size: 12px;
+    line-height: 33px!important;
+    min-height: 33px!important;
+}
+
+.activities_select span ul li {
+    font-size: 12px;
+}
+
+.activities_select .dropdown button {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 10px;
+    font-size: 12px;
+    color: black;
+    font-weight: 400;
+    min-height: 33px;
+}
+
+.activities_select .dropdown button:hover, .activities_select .dropdown button:focus {
+    box-shadow: initial;
+}
+
+.activities_select .dropdown button:after {
+    border-top: 5px solid #888888;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+}
+
+.activities_select .dropdown-item input {
+    outline: 0;
+}
+
+/*Customixation*/
+
+.add_task__btn {
+    width: 100px;
+}
+
+#todo_list {
+    margin: 0;
+    list-style: none;
+    border: 1px solid rgba(120, 130, 140, 0.2);
+    border-radius: 3px;
+    padding: 20px 15px;
+}
+
+#todo_list li {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+#todo_list li span {
+    width: 80%;
+}
+
+.add_task__edit {
+    border: 0;
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
 }
 
 @media screen and (max-width: 767px) {

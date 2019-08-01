@@ -71,6 +71,11 @@
                                     <span class="nav-icon"><i class="fa fa-cog"></i></span>
                                 </a>
                             </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Call Flow" >
+                                <a href="call-flow.html">
+                                    <span class="nav-icon"><i class="fa fa-phone"></i></span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -278,7 +283,7 @@
                             </svg>
                         </a>
                         <!-- Page title -->
-                        <div class="navbar-text nav-title flex" id="pageTitle">Dashboard</div>
+                        <div class="navbar-text nav-title flex" id="pageTitle">Call Flows</div>
                     </div>
                     <div class="col-6 col-md-6 d-flex justify-content-end">
                         <ul class="d-none d-lg-flex navbar-nav mt-2 mt-lg-0 mx-0 mx-lg-2">
@@ -468,76 +473,392 @@
             <!-- ############ Main START-->
             <div>
                 <div class="col p-0">
-                    <div class="tab-content pos-rlt">
-                        <div class="tab-pane active">
-                            <div class="p-4 b-b _600">Create New Team Member</div>
-                            <form role="form" class="p-4 col-md-9">
-                                <div class="form-group row">
-                                    <div class="col-md-7"><label>Name</label></div>
-                                    <div class="col-md-5"><input type="text" class="form-control"></div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-7"><label>Email</label></div>
-                                    <div class="col-md-5"><input type="email" class="form-control"></div>
-                                </div>
-                            </form>
-                            <div class="p-4 b-b _600">Member Info</div>
-                            <form role="form" class="p-4 col-md-9">
-                                <div class="form-group row">
-                                    <div class="col-md-7"><label>Phone</label></div>
-                                    <div class="col-md-5"><input type="number" class="form-control" placeholder="XXX XXXX XXX" required=""></div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-7">
-                                        <label>Member Teams</label>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <label class="md-check">
-                                            <input type="checkbox" name="member" id="memberDefault" value="nameCompany" checked="">
-                                            <i class="green"></i>
-                                            Default
-                                        </label>
-                                        <label class="md-check">
-                                            <input type="checkbox" name="member" id="memberTravel" value="nameWidget" checked="">
-                                            <i class="green"></i>
-                                            Travel
-                                        </label>
+                    <div class="padding">
+                        <div class="d-sm-flex row">
+                            <div class="col-md-12">
+                                <div class="nav-active-border b-success bottom box">
+                                    <div class="nav nav-md">
+                                        <a class="nav-link active" href="#" data-toggle="tab" data-target="#tab-1">Incoming Calls</a>
+                                        <a class="nav-link " href="#" data-toggle="tab" data-target="#tab-2">Callback Calls</a>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-md-7">
-                                        <label>Role</label>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="tab-content pos-rlt">
+                                    <div class="tab-pane active" id="tab-1">
+                                        <div class="box">
+                                            <div class="p-2">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4 d-flex flex-wrap lead_select">
+                                                        <div class="form-group mr-2 form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">Export</option>
+                                                                <option value="two">All</option>
+                                                                <option value="three">Selected</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">Sort By</option>
+                                                                <option value="two">Name</option>
+                                                                <option value="three">Team Members</option>
+                                                                <option value="four">Duration</option>
+                                                                <option value="fifth">Call Date</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-8 d-flex flex-wrap justify-content-end lead_select">
+                                                        <div class="input-group w-auto mr-2">
+                                                            <input type="text" class="form-control" placeholder="Search">
+                                                        </div>
+                                                        <div class="form-group form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">All</option>
+                                                                <option value="two">Name</option>
+                                                                <option value="three">Phone</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group mr-2" data-plugin="datetimepicker">
+                                                            <div class='input-group'>
+                                                               <span class="input-group-addon m-2">
+                                                                    Start
+                                                               </span>
+                                                                <input type='text' class="form-control datetimepicker-input" id="datetimepicker9" data-toggle="datetimepicker" data-target="#datetimepicker9">
+                                                                <span class="input-group-addon m-2">
+                                                                   End
+                                                                </span>
+                                                                <input type='text' class="form-control datetimepicker-input" id="datetimepicker10" data-toggle="datetimepicker" data-target="#datetimepicker10">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="form-control"><i class="fa fa-search"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped b-t">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="width:20px;">
+                                                            <label class="ui-check m-0">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </th>
+                                                        <th>ID</th>
+                                                        <th>Time</th>
+                                                        <th>Number</th>
+                                                        <th>Agent</th>
+                                                        <th>Duration</th>
+                                                        <th>Method</th>
+                                                        <th>Source</th>
+                                                        <th>Status</th>
+                                                        <th>Tag</th>
+                                                        <th>Qualification</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label class="ui-check m-0">
+                                                                <input type="checkbox" name="post[]">
+                                                                <i class="dark-white"></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>#1</td>
+                                                        <td>11:00</td>
+                                                        <td>22</td>
+                                                        <td>Test</td>
+                                                        <td>11 min</td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-archive"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-link"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-thumbs-up"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>Test</td>
+                                                        <td>
+                                                            <div class="dropdown dropup">
+                                                                <button class="btn white dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Drop</button>
+                                                                <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                    <a class="dropdown-item" href="#">Test 1</a>
+                                                                    <a class="dropdown-item" href="#">Test 2</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                            |
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-mobile"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-5">
-                                        <label class="md-check mb-2">
-                                            <input type="radio" name="role" id="role1" value="nameCompany" checked="">
-                                            <i class="green"></i>
-                                            Manger (Have access to every thing except Billing)
-                                        </label>
-                                        <label class="md-check mb-2">
-                                            <input type="radio" name="role" id="role2" value="nameWidget">
-                                            <i class="green"></i>
-                                            Widget Manger (Have access to every thing except Billing and blacklist user)
-                                        </label>
-                                        <label class="md-check mb-2">
-                                            <input type="radio" name="role" id="role3" value="nameWidget">
-                                            <i class="green"></i>
-                                            Team Leader (Have access to teams and team members and calls)
-                                        </label>
-                                        <label class="md-check mb-2">
-                                            <input type="radio" name="role" id="role4" value="nameWidget">
-                                            <i class="green"></i>
-                                            Team Member (Have access to calls belongs to him/her)
-                                        </label>
-                                        <label class="md-check mb-2">
-                                            <input type="radio" name="role" id="role5" value="nameWidget">
-                                            <i class="green"></i>
-                                            Operation Manger (Have access to all calls)
-                                        </label>
+                                    <div class="tab-pane" id="tab-2">
+                                        <div class="box">
+                                            <div class="p-2">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4 d-flex flex-wrap lead_select">
+                                                        <div class="form-group mr-2 form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">Export</option>
+                                                                <option value="two">All</option>
+                                                                <option value="three">Selected</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">Sort By</option>
+                                                                <option value="two">Name</option>
+                                                                <option value="three">Team Members</option>
+                                                                <option value="four">Duration</option>
+                                                                <option value="fifth">Call Date</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-8 d-flex flex-wrap justify-content-end lead_select">
+                                                        <div class="input-group w-auto mr-2">
+                                                            <input type="text" class="form-control" placeholder="Search">
+                                                        </div>
+                                                        <div class="form-group form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">All</option>
+                                                                <option value="two">Name</option>
+                                                                <option value="three">Phone</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group mr-2" data-plugin="datetimepicker">
+                                                            <div class='input-group'>
+                                                               <span class="input-group-addon m-2">
+                                                                    Start
+                                                               </span>
+                                                                <input type='text' class="form-control datetimepicker-input" id="datetimepicker19" data-toggle="datetimepicker" data-target="#datetimepicker19">
+                                                                <span class="input-group-addon m-2">
+                                                                   End
+                                                                </span>
+                                                                <input type='text' class="form-control datetimepicker-input" id="datetimepicker18" data-toggle="datetimepicker" data-target="#datetimepicker18">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="form-control"><i class="fa fa-search"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped b-t">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="width:20px;">
+                                                            <label class="ui-check m-0">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </th>
+                                                        <th>ID</th>
+                                                        <th>Time</th>
+                                                        <th>Number</th>
+                                                        <th>Method</th>
+                                                        <th>Source</th>
+                                                        <th>Status</th>
+                                                        <th>Tag</th>
+                                                        <th>Qualification</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label class="ui-check m-0">
+                                                                <input type="checkbox" name="post[]">
+                                                                <i class="dark-white"></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>#2</td>
+                                                        <td>11:00</td>
+                                                        <td>22</td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-archive"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-link"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-thumbs-up"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>Test</td>
+                                                        <td>
+                                                            <div class="dropdown dropup">
+                                                                <button class="btn white dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Drop</button>
+                                                                <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                    <a class="dropdown-item" href="#">Test 1</a>
+                                                                    <a class="dropdown-item" href="#">Test 2</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                            |
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-mobile"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-3">
+                                        <div class="box">
+                                            <div class="p-2">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4 d-flex flex-wrap lead_select">
+                                                        <div class="form-group mr-2 form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">Export</option>
+                                                                <option value="two">All</option>
+                                                                <option value="three">Selected</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">Sort By</option>
+                                                                <option value="two">Name</option>
+                                                                <option value="three">Team Members</option>
+                                                                <option value="four">Duration</option>
+                                                                <option value="fifth">Call Date</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-8 d-flex flex-wrap justify-content-end lead_select">
+                                                        <div class="input-group w-auto mr-2">
+                                                            <input type="text" class="form-control" placeholder="Search">
+                                                        </div>
+                                                        <div class="form-group form_sel">
+                                                            <select class="form-control" data-plugin="select2" data-option="{}">
+                                                                <option value="one" selected disabled="disabled">All</option>
+                                                                <option value="two">Name</option>
+                                                                <option value="three">Phone</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group mr-2" data-plugin="datetimepicker">
+                                                            <div class='input-group'>
+                                                               <span class="input-group-addon m-2">
+                                                                    Start
+                                                               </span>
+                                                                <input type='text' class="form-control datetimepicker-input" id="datetimepicker20" data-toggle="datetimepicker" data-target="#datetimepicker20">
+                                                                <span class="input-group-addon m-2">
+                                                                   End
+                                                                </span>
+                                                                <input type='text' class="form-control datetimepicker-input" id="datetimepicker21" data-toggle="datetimepicker" data-target="#datetimepicker21">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="form-control"><i class="fa fa-search"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped b-t">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="width:20px;">
+                                                            <label class="ui-check m-0">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </th>
+                                                        <th>ID</th>
+                                                        <th>Time</th>
+                                                        <th>Number</th>
+                                                        <th>Schedule Time</th>
+                                                        <th>Method</th>
+                                                        <th>Source</th>
+                                                        <th>Status</th>
+                                                        <th>Tag</th>
+                                                        <th>Qualification</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label class="ui-check m-0">
+                                                                <input type="checkbox" name="post[]">
+                                                                <i class="dark-white"></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>#3</td>
+                                                        <td>11:00</td>
+                                                        <td>22</td>
+                                                        <td>11 min</td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-archive"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-link"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-thumbs-up"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>Test</td>
+                                                        <td>
+                                                            <div class="dropdown dropup">
+                                                                <button class="btn white dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Drop</button>
+                                                                <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                    <a class="dropdown-item" href="#">Test 1</a>
+                                                                    <a class="dropdown-item" href="#">Test 2</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                            |
+                                                            <a href="#/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">
+                                                                <i class="fa fa-mobile"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn primary mt-2">Save</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
