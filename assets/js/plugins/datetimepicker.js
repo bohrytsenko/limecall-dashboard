@@ -7,7 +7,9 @@
     $('#datetimepicker2').datetimepicker();
     $('#datetimepicker3').datetimepicker({locale: 'ru'});
     $('#datetimepicker4').datetimepicker({format: 'L'});
+    $('#datetimepicker4_1').datetimepicker({format: 'L'});
     $('#datetimepicker5').datetimepicker({format: 'LT'});
+    $('#datetimepicker5_1').datetimepicker({format: 'LT'});
     $('#datetimepicker6').datetimepicker({
       disabledDates: [
           moment().add(1,'d'), moment().add(-1,'d')

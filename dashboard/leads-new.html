@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Widget - General</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.svg">
+    <!-- style -->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <!-- build:css ../assets/css/app.min.css -->
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <!-- endbuild -->
+</head>
+<body>
+<div class="app" id="app">
+    <!-- ############ LAYOUT START-->
+    <!-- ############ Aside START-->
+    <div id="aside" class="app-aside fade box-shadow-x nav-expand white" aria-hidden="true">
+        <div class="sidenav modal-dialog dk white">
+            <!-- sidenav top -->
+            <div class="navbar lt">
+                <!-- brand -->
+                <a href="dashboard.html" class="navbar-brand">
+                    <img src="../assets/images/logo_sm.png" alt="">
+                </a>
+                <!-- / brand -->
+            </div>
+            <!-- Flex nav content -->
+            <div class="flex hide-scroll">
+                <div class="scroll">
+                    <div class="nav-stacked nav-active-theme" data-nav>
+                        <ul class="nav bg">
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard" >
+                                <a href="dashboard.html">
+                                    <span class="nav-icon"><i class="fa fa-dashboard"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Activities" >
+                                <a href="activities.html">
+                                    <span class="nav-icon"><i class="fa fa-star"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Users" >
+                                <a href="users.html">
+                                    <span class="nav-icon"><i class="fa fa-user"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Leads" >
+                                <a href="leads.html">
+                                    <span class="nav-icon"><i class="fa fa-address-book"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Widget" >
+                                <a href="widget.html">
+                                    <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Settings" >
+                                <a href="settings.html">
+                                    <span class="nav-icon"><i class="fa fa-cog"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidenav bottom -->
+            <div class="no-shrink lt d-inline-flex justify-content-center flex-column">
+                <div class="nav-fold text-center position-relative">
+                    <a class="flex text-nowrap intro_show link_btm" data-toggle="dropdown">
+                         <span class="badge link_btm__badge badge-pill">
+                             <i class="fa fa-comment font-14"></i>
+                             <span class="badge badge-pill up theme border-0">5</span>
+                         </span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn intro show_bl pt-3 pb-0 ml-3">
+                        <div class="intro__top intro_top b-b pl-3 pb-4 pt-1 pr-3 d-flex justify-content-between align-items-center">
+                            <a class="intro_undo">
+                                <i class="fa fa-undo"></i>
+                            </a>
+                            <div class="intro_to">
+                                <a class="_600 d-flex align-items-center" data-toggle="modal" data-target="#m-md">
+                                    <span class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></span>
+                                    Intro to Limecall
+                                </a>
+                            </div>
+                            <!--<a class="intro_top__close" href="#/">-->
+                            <!--<i class="fa fa-times"></i>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="intro__list intro_list pt-3 pl-3 pr-4 pb-0">
+                            <p class="text-left">
+                                <label class="md-check line-through">
+                                    <input class="intro_check" type="checkbox" checked="">
+                                    <i class="blue"></i>
+                                    <span>Create Account</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Enter your first data</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Prioritize a feature toward an objective</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Link an insight to a related feature idea</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Add features to a release</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Share your progress with a colleague</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="intro_congrats p-3">
+                            <img class="mb-3" src="../assets/img/img_congrats.svg" alt="Congrats" />
+                            <h6>You’re a champ!</h6>
+                            <p>Kudos on your first steps towards product excellence. Keep at it and become a pro!</p>
+                            <a class="btn btn-primary text-white" href="#/">Show me more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-fold text-center position-relative">
+                    <a class="flex text-nowrap resources_show link_btm" data-toggle="dropdown">
+                        <span class="badge link_btm__badge badge-pill"><i class="fa fa-question-circle font-14"></i></span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn resources show_bl pt-3 pb-0 ml-3">
+                        <div class="intro__top intro_top b-b pl-3 pb-4 pt-1 pr-3 d-flex justify-content-between align-items-center">
+                            <div class="intro_to">
+                                <p class="_600 mb-0 font-14">
+                                    Help is here when you need it.
+                                </p>
+                            </div>
+                            <!--<a class="intro_top__close" href="#/">-->
+                            <!--<i class="fa fa-times"></i>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="intro__list intro_list pt-3 pl-3 pr-4 pb-3">
+                            <div class="chat-list">
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Insights overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">2:58 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Features overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">3:51 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Roadmap overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">1:48 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Portal overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">2:13 minutes video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resources_links b-t p-3">
+                            <ul class="text-left mb-0">
+                                <li>
+                                    <a href="#/">Limecall Portal</a>
+                                </li>
+                                <li>
+                                    <a href="#/">Keyboard shortcuts</a>
+                                </li>
+                                <li>
+                                    <a href="#/">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="nav-fold text-center position-relative">-->
+                <!--<a class="flex text-nowrap notification_show link_btm" data-toggle="dropdown">-->
+                <!--<span class="badge link_btm__badge badge-pill"><i class="fa fa-bell font-14"></i></span>-->
+                <!--</a>-->
+                <!--<div class="dropdown-menu w ml-3 mt-2 animate fadeIn notification show_bl">-->
+                <!--<div class="intro__top intro_top notification_top p-3 d-flex justify-content-between align-items-center">-->
+                <!--<div class="intro_to">-->
+                <!--<p class="_400 mb-0 notification__text">-->
+                <!--No notifications yet? <a class="text-primary font-12" href="users.html">Invite your colleagues to contribute!</a>-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="nav-fold text-center">
+                    <a class="flex text-nowrap p-2-3 link_btm" data-toggle="dropdown">
+                        <span class="link_btm__badge">
+                            <span class="badge badge-pill theme">Help</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn">
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-lightbulb-o text-primary"></i>
+                            <span>Suggest a Feature</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-play text-primary"></i>
+                            <span>Watch Tutorials</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-database text-primary"></i>
+                            <span>Knowledgebase</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-support text-primary"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Aside END-->
+    <!-- ############ Content START-->
+    <div id="content" class="app-content box-shadow-0" role="main">
+        <!-- Header -->
+        <div class="content-header white  box-shadow-2" id="content-header">
+            <div class="navbar navbar-expand-lg">
+                <div class="row justify-content-between w-100">
+                    <div class="col-6 col-md-6">
+                        <!-- btn to toggle sidenav on small screen -->
+                        <a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                                <path d="M80 304h352v16H80zM80 248h352v16H80zM80 192h352v16H80z" />
+                            </svg>
+                        </a>
+                        <!-- Page title -->
+                        <div class="navbar-text nav-title flex" id="pageTitle">Leads</div>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex justify-content-end">
+                        <ul class="d-none d-lg-flex navbar-nav mt-2 mt-lg-0 mx-0 mx-lg-2">
+                            <li class="mr-2 ml-2">
+                                <p class="mb-0 item-except text-sm text-muted">Balance</p>
+                                <p class="mb-0 text-primary"><span>$49.12</span></p>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <a href="#" class="btn btn-rounded btn-sm primary btn-theme d-none d-lg-block">
+                                    Upgrade
+                                </a>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <label class="ui-switch mt-1 mr-2 header_toggle">
+                                    <input type="checkbox" checked="">
+                                    <i></i>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-row order-lg-2">
+                            <!-- Notification -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3" data-toggle="dropdown">
+                                    <i class="fa fa-bell text-muted"></i>
+                                    <span class="badge badge-pill up danger">5</span>
+                                </a>
+                                <!-- dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right w-md animate fadeIn mt-2 p-0">
+                                    <div class="scrollable hover" style="max-height: 250px">
+                                        <div class="list">
+                                            <div class="list-item " data-id="item-10">
+                                          <span class="w-24 avatar circle blue">
+                                          <span class="fa fa-google"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Postiljonen</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-6">
+                                          <span class="w-24 avatar circle brown">
+                                          <span class="fa fa-envelope"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Rita Ora</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Homepage mockup design
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">13:23</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-1">
+                                          <span class="w-24 avatar circle grey">
+                                          <span class="fa fa-comment"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Summerella</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Send you a message
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">July 21</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-14">
+                                          <span class="w-24 avatar circle brown">
+                                          <span class="fa fa-bell"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Brielle Williamson</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-5">
+                                          <span class="w-24 avatar circle blue-grey">
+                                          <span class="fa fa-github"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Radionomy</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Competitive gaming ladders
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">09:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-4">
+                                          <span class="w-24 avatar circle pink">
+                                          <span class="fa fa-male"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Judith Garcia</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Eddel upload a media
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">12:05</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex px-3 py-2 b-t">
+                                        <div class="flex">
+                                            <span>6 Notifications</span>
+                                        </div>
+                                        <a href="setting.html">See all
+                                            <i class="fa fa-angle-right text-muted"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- / dropdown -->
+                            </li>
+                            <!-- User dropdown menu -->
+                            <li class="dropdown d-flex align-items-center">
+                                <a href="#" data-toggle="dropdown" class="d-flex align-items-center">
+                                  <span class="avatar w-32">
+                                    <img src="../assets/images/a7.jpg" alt="...">
+                                  </span>
+                                    <i class="fa fa-chevron-down ml-2 text-muted"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right w mt-2 animate fadeIn">
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#user" data-toggle-class="modal-open-aside" data-target="body">
+                                        <i class="fa fa-user text-primary"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-handshake-o text-primary"></i>
+                                        <span>Invite</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-cog text-primary"></i>
+                                        <span>Settings and Billing</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-puzzle-piece text-primary"></i>
+                                        <span>Integrations</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="signin.html">
+                                        <i class="fa fa-sign-out text-primary"></i>
+                                        Sign out
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Navarbar toggle btn -->
+                            <li class="d-lg-none d-flex align-items-center">
+                                <a href="#" class="mx-2" data-toggle="collapse" data-target="#navbarToggler">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                                        <path d="M64 144h384v32H64zM64 240h384v32H64zM64 336h384v32H64z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="content-main " id="content-main">
+            <!-- ############ Main START-->
+            <div class="padding">
+                <div class="row">
+                    <!--Left part-->
+                    <div class="col-12 col-md-4">
+                        <h2 class="text-primary font-weight-light">Purplerain.io</h2>
+                        <p>Michale Albert Mathue</p>
+                        <p><i class="fa fa-map-marker text-primary mr-2"></i>Washington , USA</p>
+                        <div class="mb-2" id="accordion">
+                            <div class="panel box no-border mb-3">
+                                <div>
+                                    <a class="box-header p-y-sm d-flex justify-content-between align-items-center" data-toggle="collapse" data-parent="#accordion" data-target="#c_1">
+                                        <p class="mb-0 text-color"><b>Lead info</b></p>
+                                        <i class="fa fa-chevron-right text-color"></i>
+                                    </a>
+                                </div>
+                                <div id="c_1" class="collapse in light">
+                                    <div class="box-body">
+                                        <div class="row b-b pb-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Lead ID:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-primary mb-0"><b>#2345654</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Phone:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">+91-4565453456</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Email ID:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">alpha@beta.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Status:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-success mb-0">Online</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>IP:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">198.8987.876</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Call Duration:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">09 minutes 33 sec</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Time:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">Tuesday 28th may 10:54:45</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Source:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">Google Ads</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Agent:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0"><b>Gary Boston</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Country:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">London</p>
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Time zone:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p class="text-color mb-0">+5:30 GMT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel box no-border mb-3">
+                                <div>
+                                    <a class="box-header p-y-sm d-flex justify-content-between align-items-center b-b" data-toggle="collapse" data-parent="#accordion" data-target="#c_2">
+                                        <p class="mb-0 text-color"><b>Scheduled Calls</b></p>
+                                        <i class="fa fa-plus text-color"></i>
+                                    </a>
+                                </div>
+                                <div id="c_2" class="collapse in light">
+                                    <div class="box-body">
+                                        <div class="form-group row mb-0">
+                                            <label class="col-12 col-md-12 col-form-label pt-0" for="shedule">Schedule a call to</label>
+                                            <div class="col-12 col-md-12">
+                                                <input class="form-control form-control-sm" type="text" id="shedule">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mb-0">
+                                            <div class="col-lg-4">
+                                                <div class="row">
+                                                    <label class="col-12 col-md-12 col-form-label">Date</label>
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group" data-plugin="datetimepicker">
+                                                            <div class='input-group' id="datetimepicker4" data-target-input="nearest">
+                                                                <input type='text' class="form-control form-control-sm datetimepicker-input border-right-0" data-target="#datetimepicker4">
+                                                                <span class="input-group-addon form-control form-control-sm white border-left-0 ml-0 flex-0-2" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                                    <span class="fa fa-calendar text-color"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="row">
+                                                    <label class="col-12 col-md-12 col-form-label">Time</label>
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <div class='input-group' id="datetimepicker5" data-target-input="nearest">
+                                                                <input type='text' class="form-control form-control-sm datetimepicker-input border-right-0" data-target="#datetimepicker5">
+                                                                <span class="input-group-addon form-control form-control-sm white border-left-0 ml-0 flex-0-2" data-target="#datetimepicker5" data-toggle="datetimepicker">
+                                                                  <span class="fa fa-clock-o text-color"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="row">
+                                                    <label class="col-12 col-md-12 col-form-label">Assign to</label>
+                                                    <div class="col-12 c-md-12">
+                                                        <select class="form-control" data-plugin="select2" data-option="{}" data-minimum-results-for-search="Infinity">
+                                                            <option value="one">First</option>
+                                                            <option value="two">Second</option>
+                                                            <option value="three">Third</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer p-0 border-top-0">
+                                            <button class="btn">Cancel</button>
+                                            <button class="btn primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-header">
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <i class="fa fa-volume-control-phone text-color"></i>
+                                        </div>
+                                        <div class="col-md-9 pl-0">
+                                            <p class="mb-0 text-color">Call <b>Nairobi (+91-954545434)</b></p>
+                                            <small>4/8/2019 | 18:34:00</small>
+                                        </div>
+                                        <div class="col-md-2 d-flex justify-content-between align-items-center">
+                                            <a class="d-inline-block" href="#/"><i class="fa fa-edit text-color"></i></a>
+                                            <a class="d-inline-block" href="#/"><i class="fa fa-times-circle-o text-color"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel box no-border mb-3">
+                                <div>
+                                    <a class="box-header p-y-sm d-flex justify-content-between align-items-center" data-toggle="collapse" data-parent="#accordion" data-target="#c_3">
+                                        <p class="mb-0 text-color"><b>Contact</b></p>
+                                        <i class="fa fa-chevron-right text-color"></i>
+                                    </a>
+                                </div>
+                                <div id="c_3" class="collapse in light">
+                                    <div class="box-body">
+                                        <div class="row b-b pb-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Name:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Company Name:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Designation:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+
+                                            </div>
+                                        </div>
+                                        <div class="row b-b pb-2 pt-2">
+                                            <div class="col-6 col-md-6">
+                                                <p class="mb-0 text-color"><b>Country:</b></p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel box no-border mb-3">
+                                <div>
+                                    <div class="box-header p-y-sm d-flex justify-content-between align-items-center">
+                                        <p class="col-md-2 mb-0 pl-0 text-color"><b>Tags</b></p>
+                                        <div class="col-md-9 d-flex flex-wrap align-items-center justify-content-end lead_select">
+                                            <div class="input-group w-auto mr-3">
+                                                <input type="text" class="form-control tags_search" placeholder="Search">
+                                                <span class="input-group-append">
+                                                    <button class="input-group-text"><i class="fa fa-search text-color"></i></button>
+                                                </span>
+                                            </div>
+                                            <a href="#/"> <i class="fa fa-filter text-color"></i></a>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#accordion" data-target="#c_4" href="#/"><i class="col-md-1 fa fa-chevron-right text-color pr-0 text-right"></i></a>
+                                    </div>
+                                </div>
+                                <div id="c_4" class="collapse in light">
+                                    <div class="box-body b-t">
+                                        <div class="row pt-0 pb-2">
+                                            <div class="col-md-12">
+                                                <a href="#/" class="border text-color px-2 py-1 box-radius-4 d-inline-block mb-2 mr-2 hover_tag">Lorem ipsum dolor</a>
+                                                <a href="#/" class="border text-color px-2 py-1 box-radius-4 d-inline-block mb-2 mr-2 hover_tag">Lorem ipsum</a>
+                                                <a href="#/" class="border text-color px-2 py-1 box-radius-4 d-inline-block mb-2 mr-2 hover_tag">Lorem</a>
+                                                <a href="#/" class="border text-color px-2 py-1 box-radius-4 d-inline-block mb-2 mr-2 hover_tag">Lorem ipsum dolor</a>
+                                                <a href="#/" class="border text-color px-2 py-1 box-radius-4 d-inline-block mb-2 mr-2 hover_tag">consectetuer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel box no-border mb-3">
+                                <div>
+                                    <a class="box-header p-y-sm d-flex justify-content-between align-items-center b-b" data-toggle="collapse" data-parent="#accordion" data-target="#c_5">
+                                        <p class="mb-0 text-color"><b>Task</b></p>
+                                        <i class="fa fa-plus text-color"></i>
+                                    </a>
+                                </div>
+                                <div id="c_5" class="collapse in light">
+                                    <div class="box-body">
+                                        <div class="form-group row mb-0">
+                                            <label class="col-12 col-md-12 col-form-label pt-0" for="description">Task Description</label>
+                                            <div class="col-12 col-md-12">
+                                                <input class="form-control form-control-sm" type="text" id="description">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mb-0">
+                                            <div class="col-lg-6">
+                                                <div class="row">
+                                                    <label class="col-12 col-md-12 col-form-label">Date</label>
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group mb-2" data-plugin="datetimepicker">
+                                                            <div class='input-group' id="datetimepicker4_1" data-target-input="nearest">
+                                                                <input type='text' class="form-control form-control-sm datetimepicker-input border-right-0" data-target="#datetimepicker4_1">
+                                                                <span class="input-group-addon form-control form-control-sm white border-left-0 ml-0 flex-0-2" data-target="#datetimepicker4_1" data-toggle="datetimepicker">
+                                                                    <span class="fa fa-calendar text-color"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="row">
+                                                    <label class="col-12 col-md-12 col-form-label">Time</label>
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group mb-2">
+                                                            <div class='input-group' id="datetimepicker5_1" data-target-input="nearest">
+                                                                <input type='text' class="form-control form-control-sm datetimepicker-input border-right-0" data-target="#datetimepicker5_1">
+                                                                <span class="input-group-addon form-control form-control-sm white border-left-0 ml-0 flex-0-2" data-target="#datetimepicker5_1" data-toggle="datetimepicker">
+                                                                  <span class="fa fa-clock-o text-color"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row mb-3">
+                                                    <label class="col-12 col-md-12 col-form-label">Assign user</label>
+                                                    <div class="col-12 c-md-12 select_100_max">
+                                                        <select class="form-control" data-plugin="select2" data-option="{}" data-minimum-results-for-search="Infinity">
+                                                            <option value="one">Gibson Bolt</option>
+                                                            <option value="two">Gibson Bolt 2</option>
+                                                            <option value="three">Gibson Bolt 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer p-0 border-top-0">
+                                            <button class="btn">Cancel</button>
+                                            <button class="btn primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-header">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                        </div>
+                                        <div class="col-md-8 pl-0">
+                                            <h6 class="text-color">Contact Rashel Sam</h6>
+                                            <small>4/8/2019</small>
+                                        </div>
+                                        <div class="col-md-2 d-flex justify-content-end align-items-center">
+                                            <i class="fa fa-check-square-o text-color font-18"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel box no-border mb-3">
+                                <div>
+                                    <a class="box-header p-y-sm d-flex justify-content-between align-items-center b-b" >
+                                        <p class="mb-0 text-color"><b>Call history</b></p>
+                                    </a>
+                                </div>
+                                <div class="box-header">
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <i class="fa fa-circle text-primary text-xs"></i>
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <p class="text-color">Tuesday, 10:34:45</p>
+                                        </div>
+                                        <div class="col-md-7 d-flex justify-content-end">
+                                            <a href="#/"><i class="fa fa-backward text-color"></i></a>
+                                            <a href="#/"><i class="fa fa-play text-color ml-3"></i></a>
+                                            <a href="#/"><i class="fa fa-stop text-color ml-3"></i></a>
+                                            <a href="#/"><i class="fa fa-forward text-color ml-3"></i></a>
+                                            <a href="#/"><i class="fa fa-download text-primary ml-4"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <i class="fa fa-circle text-primary font-10"></i>
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <p class="text-color">Tuesday, 10:34:45</p>
+                                        </div>
+                                        <div class="col-md-7 d-flex justify-content-end">
+                                            <a href="#/"><i class="fa fa-backward text-color"></i></a>
+                                            <a href="#/"><i class="fa fa-play text-color ml-3"></i></a>
+                                            <a href="#/"><i class="fa fa-stop text-color ml-3"></i></a>
+                                            <a href="#/"><i class="fa fa-forward text-color ml-3"></i></a>
+                                            <a href="#/"><i class="fa fa-download text-primary ml-4"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel box no-border mb-3">
+                                <div>
+                                    <a class="box-header p-y-sm d-flex justify-content-between align-items-center" data-toggle="collapse" data-parent="#accordion" data-target="#c_7">
+                                        <p class="mb-0 text-color"><b>Feedback</b></p>
+                                        <i class="fa fa-chevron-right text-color"></i>
+                                    </a>
+                                </div>
+                                <div id="c_7" class="collapse in light">
+                                    <div class="box-body b-t white">
+                                        <div class="star-rating text-center mb-2">
+                                            <i class="fa fa-star" data-rating="1"></i>
+                                            <i class="fa fa-star" data-rating="2"></i>
+                                            <i class="fa fa-star" data-rating="3"></i>
+                                            <i class="fa fa-star" data-rating="4"></i>
+                                            <i class="fa fa-star" data-rating="5"></i>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <label class="col-12 col-md-12 col-form-label pt-0" for="shedule">Comments</label>
+                                            <div class="col-12 col-md-12">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer p-0 border-top-0">
+                                            <button class="btn">Cancel</button>
+                                            <button class="btn primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Left part-->
+                    <!--Right part-->
+                    <div class="col-12 col-md-8">
+                        <div>
+                            <div class="row justify-content-between mb-3">
+                                <div class="col-12 col-md-8">
+                                    <div class="nav-active-border b-success bottom">
+                                        <div class="nav nav-md lead_tabs mb-1">
+                                            <button class="nav-link active px-3 py-1 mb-1 border box-radius-4 drop_radius__right" data-toggle="tab" data-target="#tab-1"><i class="fa fa-volume-control-phone text-color"></i> Call</button>
+                                            <div class="dropdown mr-2 mb-1">
+                                                <button class="btn white dropdown-toggle drop_radius__left" data-toggle="dropdown"></button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Log a call</a>
+                                                </div>
+                                            </div>
+                                            <button class="nav-link px-3 py-1 mb-1 mr-2 border box-radius-4" data-toggle="tab" data-target="#tab-2"><i class="fa fa-envelope text-color"></i> SMS</button>
+                                            <button class="nav-link px-3 py-1 mb-1 border box-radius-4 drop_radius__right"  data-toggle="tab" data-target="#tab-3"><i class="fa fa-tag text-color"></i> Tag</button>
+                                            <div class="dropdown mr-2 mb-1">
+                                                <button class="btn white dropdown-toggle drop_radius__left" data-toggle="dropdown"></button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View saved Tags</a>
+                                                </div>
+                                            </div>
+                                            <button class="nav-link px-3 py-1 mr-2 mb-1 border box-radius-4"  data-toggle="tab" data-target="#tab-4"><i class="fa fa-pencil-square-o text-color"></i> Note</button>
+                                            <button class="nav-link px-3 py-1 mr-2 mb-1 border box-radius-4"><i class="fa fa-microphone text-color"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-end">
+                                    <div class="nav-active-border b-success bottom">
+                                        <div class="nav nav-md lead_tabs mb-1">
+                                            <button class="nav-link px-3 py-1 border box-radius-4 drop_radius__right">Owner</button>
+                                            <div class="dropdown mr-2">
+                                                <button class="btn white dropdown-toggle drop_radius__left" data-toggle="dropdown"></button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View saved Tags</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12 col-md-12">
+                                    <div class="d-flex b-b pb-2">
+                                        <div class="dropdown dropup">
+                                            <button class="btn dropdown-toggle mr-2" data-toggle="dropdown">All Activities</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#" data-toggle="tab" data-target="#tab-5">Calls</a>
+                                                <a class="dropdown-item" href="#">Messages</a>
+                                                <a class="dropdown-item" href="#">Notes</a>
+                                                <a class="dropdown-item" href="#">SMS</a>
+                                                <a class="dropdown-item" href="#">Email</a>
+                                                <a class="dropdown-item" href="#">Task Update</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown dropup">
+                                            <button class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user text-color"></i> All Users</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content pos-rlt">
+                                <div class="tab-pane active" id="tab-1">
+                                    <div class="box-body">
+                                        <div class="streamline">
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <textarea class="form-control mb-3" placeholder="Add note to this call..."></textarea>
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-6 d-flex align-items-center">
+                                                            <a class="d-flex mr-3" href="#/"><i class="fa fa-times-circle-o text-color font-18"></i></a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 d-flex justify-content-end align-items-center">
+                                                            <div>
+                                                                <select class="form-control" data-plugin="select2" data-option="{}" data-minimum-results-for-search="Infinity">
+                                                                    <option value="one" disabled selected>Choose a contact</option>
+                                                                    <option value="two">First</option>
+                                                                    <option value="three">Second</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="ml-2">
+                                                                <select class="pl-2 form-control" data-plugin="select2" data-option="{}" data-minimum-results-for-search="Infinity">
+                                                                    <option value="one" disabled selected>Time</option>
+                                                                    <option value="two">30 days</option>
+                                                                    <option value="three">1 month</option>
+                                                                </select>
+                                                            </div>
+                                                            <button class="ml-2 btn btn-sm grey">Done</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-warning">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-check-circle-o font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Task completed:</b> <small>Call Steli a day ago | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-primary">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab-2">
+                                    <div class="box-body">
+                                        <div class="streamline">
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <div class="input-group mb-2">
+                                                                <span class="input-group-prepend">
+                                                                    <span class="input-group-text">To:</span>
+                                                                </span>
+                                                        <select class="custom-select">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+
+                                                    </div>
+                                                    <textarea class="form-control mb-3"></textarea>
+                                                    <div class="row">
+                                                        <div class="col-7 col-md-7 d-flex align-items-center">
+                                                            <button class="btn btn-sm success">Send Now</button>
+                                                            <button class="ml-2 btn btn-sm grey">Send Later</button>
+                                                            <p class="ml-3 text-color">1000 Characters left</p>
+                                                        </div>
+                                                        <div class="col-5 col-md-5 d-flex justify-content-end align-items-center">
+                                                            <a class="d-flex mr-3" href="#/"><i class="fa fa-times-circle-o text-color font-18"></i></a>
+                                                            <button class="btn btn-sm grey">Send Draft</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-warning">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-check-circle-o font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Task completed:</b> <small>Call Steli a day ago | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-primary">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab-3">
+                                    <div class="box-body">
+                                        <div class="streamline">
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <div class="input-group mb-2">
+                                                                <span class="input-group-prepend">
+                                                                    <span class="input-group-text">Tags:</span>
+                                                                </span>
+                                                        <select class="custom-select">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+
+                                                    </div>
+                                                    <textarea class="form-control mb-3" placeholder="Add tags..."></textarea>
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-6 d-flex align-items-center">
+                                                            <a class="d-flex mr-3 text-color" href="#/"><i class="fa fa-times-circle-o text-color font-18 mr-3"></i> Close</a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 d-flex justify-content-end align-items-center">
+                                                            <button class="ml-2 btn btn-sm grey">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-warning">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-check-circle-o font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Task completed:</b> <small>Call Steli a day ago | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-primary">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab-4">
+                                    <div class="box-body">
+                                        <div class="streamline">
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <textarea class="form-control mb-3" placeholder="Add a note about this lead..."></textarea>
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-6 d-flex align-items-center">
+                                                            <a class="d-flex mr-3" href="#/"><i class="fa fa-times-circle-o text-color font-18"></i></a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 d-flex justify-content-end align-items-center">
+                                                            <button class="ml-2 btn btn-sm grey">Done</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-warning">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-check-circle-o font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Task completed:</b> <small>Call Steli a day ago | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-primary">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-envelope font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <p class="text-color mb-0"><b>Empty Message</b></p>
+                                                    <p class="mb-0"><small class="text-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, smagna aliquam euismod</small></p>
+                                                    <p class="mb-0"><small class="text-color">tincidunt ut laoreet dolore magna aliquam | 44 minutes ago</small></p>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab-5">
+                                    <div class="box-body">
+                                        <div class="streamline">
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-volume-control-phone font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <div class="text-color mb-0 d-inline-block">
+                                                        <b>Call Successfull:</b> <small><b>Call made to cali,</b> 2 mins. | 44 minutes ago |</small>
+                                                        <div class="d-inline-block ml-2">
+                                                            <a href="#/"><i class="fa fa-backward text-color font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-play text-color ml-2 font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-stop text-color ml-2 font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-forward text-color ml-2 font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-download text-primary ml-3 font-10"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-danger">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-volume-control-phone font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <div class="text-color mb-0 d-inline-block">
+                                                        <b>Call Unsuccessful:</b> <small>Call tried but was not established | 44 minutes ago</small>
+                                                    </div>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-danger">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-volume-control-phone font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <div class="text-color mb-0 d-inline-block">
+                                                        <b>Call Unsuccessful:</b> <small>Call tried but was not established | 44 minutes ago</small>
+                                                    </div>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                            <div class="sl-item b-success">
+                                                <div class="sl-icon">
+                                                    <i class="fa fa-volume-control-phone font-14"></i>
+                                                </div>
+                                                <div class="sl-content box px-3 py-2">
+                                                    <div class="text-color mb-0 d-inline-block">
+                                                        <b>Call Successfull:</b> <small><b>Call made to cali,</b> 2 mins. | 44 minutes ago |</small>
+                                                        <div class="d-inline-block ml-2">
+                                                            <a href="#/"><i class="fa fa-backward text-color font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-play text-color ml-2 font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-stop text-color ml-2 font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-forward text-color ml-2 font-10"></i></a>
+                                                            <a href="#/"><i class="fa fa-download text-primary ml-3 font-10"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <span class="pos_top_right position-absolute d-flex p-2 text-lt justify-content-center primary box-radius-4">GB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Right part-->
+                </div>
+            </div>
+            <!-- ############ Main END-->
+        </div>
+        <!-- Footer -->
+        <div class="content-footer white " id="content-footer">
+            <div class="d-flex p-3">
+                <span class="text-sm text-muted flex">Limecall © 2019</span>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Content END-->
+    <!-- ############ LAYOUT END-->
+</div>
+<div class="modal fade" id="user" data-backdrop="true" aria-hidden="true">
+    <div class="modal-dialog modal-right white b-l">
+        <div class="d-flex flex-column h-100">
+            <div class="p-4 box">
+                <div class="pb-4 b-b _600">Change Profile Settings</div>
+                <form role="form" class="col-md-9 p-0 pb-5">
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>First Name</label></div>
+                        <div class="col-md-5"><input type="text" class="form-control" placeholder="Test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Email</label></div>
+                        <div class="col-md-5"><input type="email" class="form-control" placeholder="Test@test.test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Password</label></div>
+                        <div class="col-md-5"><input type="password" class="form-control"></div>
+                    </div>
+                    <button type="submit" class="btn primary mt-2">Save changes</button>
+                </form>
+                <div class="pb-4 b-b _600">Delete your account</div>
+                <button type="submit" class="btn danger mt-4">Delete account</button>
+                <p class="item-except text-sm mt-2 text-muted h-1x">Delete your account and all of your source data. This is irreversible.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="m-md" class="modal video_modal" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0 pt-5">
+                <h5 class="modal-title w-100 text-center">Intro to Limecall</h5>
+                <a data-dismiss="modal" class="ml-auto video_modal__close">
+                    <span class="text-lg l-h-1x">×</span>
+                </a>
+            </div>
+            <div class="modal-body text-center p-lg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kWcHPKNjuFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequatur corporis dicta ducimus excepturi illum inventore itaque necessitatibus nisi, nobis non odit omnis praesentium quae rerum sit temporibus, veritatis.</p>
+                <a class="btn btn-primary text-white mb-4" href="#/">Let's get started</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+<div id="m-export" class="modal" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="ativities_modal__top">
+                    <h5>Export</h5>
+                </div>
+                <a href="#/" data-dismiss="modal"><i class="fa fa-close"></i></a>
+            </div>
+            <div class="modal-body text-center p-0">
+                <div class="col-12 col-lg-12 pt-3">
+                    <p class="text-left">Choose what you'd like to export and we will email you a link to the generated file.</p>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Agents</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <div class="form-group mr-2  activities_select">
+                                <select class="form-control" data-plugin="select2" data-option="{}">
+                                    <option value="Akshay">Akshay</option>
+                                    <option value="Steve">Steve</option>
+                                    <option value="Mark">Mark</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Status</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status" checked>
+                                    <i class="primary"></i>
+                                    Completed
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Failed
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Missed by user
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Missed by agent
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Ongoing
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Score</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score" checked>
+                                    <i class="primary"></i>
+                                    Qualified
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score">
+                                    <i class="primary"></i>
+                                    Unqualified
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score">
+                                    <i class="primary"></i>
+                                    Ready to buy
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn primary p-x-md" data-dismiss="modal">Export</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+<!-- build:js ../assets/js/app.min.js -->
+<!-- jQuery -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- core -->
+<script src="../libs/pace-progress/pace.min.js"></script>
+<script src="../libs/pjax/pjax.min.js"></script>
+<script src="../assets/js/lazyload.config.js"></script>
+<script src="../assets/js/lazyload.js"></script>
+<script src="../assets/js/plugin.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scrollto.js"></script>
+<script src="../assets/js/toggleclass.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/ajax.js"></script>
+<script src="../assets/js/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>
