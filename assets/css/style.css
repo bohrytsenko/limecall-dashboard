@@ -561,6 +561,22 @@ body .sl-icon > i {
     .lead_select {
         justify-content: flex-start!important;
     }
+    .act_left {
+        text-align: left!important;
+        margin-bottom: 15px;
+    }
+    #aside .dropdown-menu.show {
+        left: 60% !important;
+    }
+    .owner_left {
+        justify-content: flex-start!important;
+    }
+    .lead_tabs button {
+        background-color: white;
+    }
+    .mob_font_10 {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
