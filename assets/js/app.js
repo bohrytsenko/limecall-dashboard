@@ -58,3 +58,16 @@ var app = app || {};
    	});
 
 })(jQuery, app);
+
+$( document ).ready(function() {
+
+    // Lead popup
+
+    $('.lead-popup--open').on('click', function () {
+        $('.leads-popup').addClass('show');
+    });
+
+    $('.hero-close').on('click', function () {
+       $('.leads-popup').removeClass('show');
+    });
+});
