@@ -70,4 +70,11 @@ $( document ).ready(function() {
     $('.hero-close').on('click', function () {
        $('.leads-popup').removeClass('show');
     });
+
+    // Modal Lead Score
+
+    $('.dropdown-lead-score .dropdown-item').on('click', function () {
+        $('.dropdown-lead-score .dropdown-item').removeClass('active');
+
+    });
 });

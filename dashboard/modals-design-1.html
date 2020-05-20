@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Widget - General</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.svg">
+    <!-- style -->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <!-- build:css ../assets/css/app.min.css -->
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.0/css/intlTelInput.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div class="app" id="app">
+    <!-- ############ LAYOUT START-->
+    <!-- ############ Aside START-->
+    <div id="aside" class="app-aside fade box-shadow-x nav-expand white" aria-hidden="true">
+        <div class="sidenav modal-dialog dk white">
+            <!-- sidenav top -->
+            <div class="navbar lt">
+                <!-- brand -->
+                <a href="dashboard.html" class="navbar-brand">
+                    <img src="../assets/images/logo_sm.png" alt="">
+                </a>
+                <!-- / brand -->
+            </div>
+            <!-- Flex nav content -->
+            <div class="flex hide-scroll">
+                <div class="scroll">
+                    <div class="nav-stacked nav-active-theme" data-nav>
+                        <ul class="nav bg">
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard" >
+                                <a href="dashboard.html">
+                                    <span class="nav-icon"><i class="fa fa-dashboard"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Activities" >
+                                <a href="activities.html">
+                                    <span class="nav-icon"><i class="fa fa-star"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Users" >
+                                <a href="users.html">
+                                    <span class="nav-icon"><i class="fa fa-user"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Leads" >
+                                <a href="leads.html">
+                                    <span class="nav-icon"><i class="fa fa-address-book"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Widget" >
+                                <a href="widget.html">
+                                    <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Settings" >
+                                <a href="settings.html">
+                                    <span class="nav-icon"><i class="fa fa-cog"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidenav bottom -->
+            <div class="no-shrink lt d-inline-flex justify-content-center flex-column">
+                <div class="nav-fold text-center position-relative">
+                    <a class="flex text-nowrap intro_show link_btm" data-toggle="dropdown">
+                         <span class="badge link_btm__badge badge-pill">
+                             <i class="fa fa-comment font-14"></i>
+                             <span class="badge badge-pill up theme border-0">5</span>
+                         </span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn intro show_bl pt-3 pb-0 ml-3">
+                        <div class="intro__top intro_top b-b pl-3 pb-4 pt-1 pr-3 d-flex justify-content-between align-items-center">
+                            <a class="intro_undo">
+                                <i class="fa fa-undo"></i>
+                            </a>
+                            <div class="intro_to">
+                                <a class="_600 d-flex align-items-center" data-toggle="modal" data-target="#m-md">
+                                    <span class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></span>
+                                    Intro to Limecall
+                                </a>
+                            </div>
+                            <!--<a class="intro_top__close" href="#/">-->
+                            <!--<i class="fa fa-times"></i>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="intro__list intro_list pt-3 pl-3 pr-4 pb-0">
+                            <p class="text-left">
+                                <label class="md-check line-through">
+                                    <input class="intro_check" type="checkbox" checked="">
+                                    <i class="blue"></i>
+                                    <span>Create Account</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Enter your first data</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Prioritize a feature toward an objective</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Link an insight to a related feature idea</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Add features to a release</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Share your progress with a colleague</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="intro_congrats p-3">
+                            <img class="mb-3" src="../assets/img/img_congrats.svg" alt="Congrats" />
+                            <h6>You’re a champ!</h6>
+                            <p>Kudos on your first steps towards product excellence. Keep at it and become a pro!</p>
+                            <a class="btn btn-primary text-white" href="#/">Show me more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-fold text-center position-relative">
+                    <a class="flex text-nowrap resources_show link_btm" data-toggle="dropdown">
+                        <span class="badge link_btm__badge badge-pill"><i class="fa fa-question-circle font-14"></i></span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn resources show_bl pt-3 pb-0 ml-3">
+                        <div class="intro__top intro_top b-b pl-3 pb-4 pt-1 pr-3 d-flex justify-content-between align-items-center">
+                            <div class="intro_to">
+                                <p class="_600 mb-0 font-14">
+                                    Help is here when you need it.
+                                </p>
+                            </div>
+                            <!--<a class="intro_top__close" href="#/">-->
+                            <!--<i class="fa fa-times"></i>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="intro__list intro_list pt-3 pl-3 pr-4 pb-3">
+                            <div class="chat-list">
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Insights overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">2:58 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Features overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">3:51 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Roadmap overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">1:48 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Portal overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">2:13 minutes video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resources_links b-t p-3">
+                            <ul class="text-left mb-0">
+                                <li>
+                                    <a href="#/">Limecall Portal</a>
+                                </li>
+                                <li>
+                                    <a href="#/">Keyboard shortcuts</a>
+                                </li>
+                                <li>
+                                    <a href="#/">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="nav-fold text-center position-relative">-->
+                <!--<a class="flex text-nowrap notification_show link_btm" data-toggle="dropdown">-->
+                <!--<span class="badge link_btm__badge badge-pill"><i class="fa fa-bell font-14"></i></span>-->
+                <!--</a>-->
+                <!--<div class="dropdown-menu w ml-3 mt-2 animate fadeIn notification show_bl">-->
+                <!--<div class="intro__top intro_top notification_top p-3 d-flex justify-content-between align-items-center">-->
+                <!--<div class="intro_to">-->
+                <!--<p class="_400 mb-0 notification__text">-->
+                <!--No notifications yet? <a class="text-primary font-12" href="users.html">Invite your colleagues to contribute!</a>-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="nav-fold text-center">
+                    <a class="flex text-nowrap p-2-3 link_btm" data-toggle="dropdown">
+                        <span class="link_btm__badge">
+                            <span class="badge badge-pill theme">Help</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn">
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-lightbulb-o text-primary"></i>
+                            <span>Suggest a Feature</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-play text-primary"></i>
+                            <span>Watch Tutorials</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-database text-primary"></i>
+                            <span>Knowledgebase</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-support text-primary"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Aside END-->
+    <!-- ############ Content START-->
+    <div id="content" class="app-content box-shadow-0" role="main">
+        <!-- Header -->
+        <div class="content-header white  box-shadow-2" id="content-header">
+            <div class="navbar navbar-expand-lg">
+                <div class="row justify-content-between w-100">
+                    <div class="col-6 col-md-6">
+                        <!-- btn to toggle sidenav on small screen -->
+                        <a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                                <path d="M80 304h352v16H80zM80 248h352v16H80zM80 192h352v16H80z" />
+                            </svg>
+                        </a>
+                        <!-- Page title -->
+                        <div class="navbar-text nav-title flex" id="pageTitle">Modals</div>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex justify-content-end">
+                        <ul class="d-none d-lg-flex navbar-nav mt-2 mt-lg-0 mx-0 mx-lg-2">
+                            <li class="mr-2 ml-2">
+                                <p class="mb-0 item-except text-sm text-muted">Balance</p>
+                                <p class="mb-0 text-primary"><span>$49.12</span></p>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <a href="#" class="btn btn-rounded btn-sm primary btn-theme d-none d-lg-block">
+                                    Upgrade
+                                </a>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <label class="ui-switch mt-1 mr-2 header_toggle">
+                                    <input type="checkbox" checked="">
+                                    <i></i>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-row order-lg-2">
+                            <!-- Notification -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3" data-toggle="dropdown">
+                                    <i class="fa fa-bell text-muted"></i>
+                                    <span class="badge badge-pill up danger">5</span>
+                                </a>
+                                <!-- dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right w-md animate fadeIn mt-2 p-0">
+                                    <div class="scrollable hover" style="max-height: 250px">
+                                        <div class="list">
+                                            <div class="list-item " data-id="item-10">
+                                          <span class="w-24 avatar circle blue">
+                                          <span class="fa fa-google"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Postiljonen</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-6">
+                                          <span class="w-24 avatar circle brown">
+                                          <span class="fa fa-envelope"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Rita Ora</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Homepage mockup design
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">13:23</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-1">
+                                          <span class="w-24 avatar circle grey">
+                                          <span class="fa fa-comment"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Summerella</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Send you a message
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">July 21</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-14">
+                                          <span class="w-24 avatar circle brown">
+                                          <span class="fa fa-bell"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Brielle Williamson</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-5">
+                                          <span class="w-24 avatar circle blue-grey">
+                                          <span class="fa fa-github"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Radionomy</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Competitive gaming ladders
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">09:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-4">
+                                          <span class="w-24 avatar circle pink">
+                                          <span class="fa fa-male"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Judith Garcia</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Eddel upload a media
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">12:05</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex px-3 py-2 b-t">
+                                        <div class="flex">
+                                            <span>6 Notifications</span>
+                                        </div>
+                                        <a href="setting.html">See all
+                                            <i class="fa fa-angle-right text-muted"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- / dropdown -->
+                            </li>
+                            <!-- User dropdown menu -->
+                            <li class="dropdown d-flex align-items-center">
+                                <a href="#" data-toggle="dropdown" class="d-flex align-items-center">
+                                  <span class="avatar w-32">
+                                    <img src="../assets/images/a7.jpg" alt="...">
+                                  </span>
+                                    <i class="fa fa-chevron-down ml-2 text-muted"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right w mt-2 animate fadeIn">
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#user" data-toggle-class="modal-open-aside" data-target="body">
+                                        <i class="fa fa-user text-primary"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-handshake-o text-primary"></i>
+                                        <span>Invite</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-cog text-primary"></i>
+                                        <span>Settings and Billing</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-puzzle-piece text-primary"></i>
+                                        <span>Integrations</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="signin.html">
+                                        <i class="fa fa-sign-out text-primary"></i>
+                                        Sign out
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Navarbar toggle btn -->
+                            <li class="d-lg-none d-flex align-items-center">
+                                <a href="#" class="mx-2" data-toggle="collapse" data-target="#navbarToggler">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                                        <path d="M64 144h384v32H64zM64 240h384v32H64zM64 336h384v32H64z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="content-main padding" id="content-main">
+            <!--begin modal view 1-->
+            <button class="btn white" data-toggle="modal" data-target="#modal-view-1">Incoming call Unknown</button>
+
+            <div id="modal-view-1" class="modal modal-incoming" data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><img src="../assets/img/icon-incoming.svg" alt="Icon" /> Incoming call</h5>
+                        </div>
+                        <div class="modal-body text-center p-lg">
+                            <div class="user">
+                                <div class="user-avatar">
+                                    <img src="../assets/img/avatar-unknown.png" alt="Avatar" />
+                                </div>
+                                <div class="user-info text-left">
+                                    <h4>49.37.198.221</h4>
+                                    <p class="color-grey">Unknown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-reject p-x-md" data-dismiss="modal">Reject</button>
+                            <button type="button" class="btn btn-accept p-x-md" data-dismiss="modal">Accept</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end modal view 1-->
+
+            <!--begin modal view 2-->
+            <button class="btn white" data-toggle="modal" data-target="#modal-view-2">Incoming call Arantxa Decausta</button>
+
+            <div id="modal-view-2" class="modal modal-incoming" data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><img src="../assets/img/icon-incoming.svg" alt="Icon" /> Incoming call</h5>
+                        </div>
+                        <div class="modal-body text-center p-lg">
+                            <div class="user">
+                                <div class="user-avatar">
+                                    <img src="../assets/img/avatar-arantxa.png" alt="Avatar" />
+                                </div>
+                                <div class="user-info text-left">
+                                    <h4>Arantxa Decausta</h4>
+                                    <p>Purplerain technologies Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-reject p-x-md" data-dismiss="modal">Reject</button>
+                            <button type="button" class="btn btn-accept p-x-md" data-dismiss="modal">Accept</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end modal view 2-->
+
+            <!--begin modal view 3-->
+            <button class="btn white" data-toggle="modal" data-target="#modal-view-3">Call in Progress</button>
+
+            <div id="modal-view-3" class="modal modal-progress" data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><img src="../assets/img/icon-incoming.svg" alt="Icon" /> Call in Progress</h5>
+                        </div>
+                        <div class="modal-body text-center p-lg">
+                            <div class="details">
+                                <div class="details-left">
+                                    <ul>
+                                        <li>
+                                            <p><b>Source</b></p>
+                                            <p><a target="_blank" href="www.limecall.com">www.limecall.com</a></p>
+                                        </li>
+                                        <li>
+                                            <p><b>IP</b></p>
+                                            <p>49.37.198.221</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="details-right">
+                                    <div class="user">
+                                        <div class="user-avatar">
+                                            <img src="../assets/img/avatar-arantxa.png" alt="Avatar" />
+                                        </div>
+                                        <div class="user-info text-left">
+                                            <h4>Arantxa Decausta</h4>
+                                            <p>Purplerain technologies Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs">
+                                <div class="nav-active-primary">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link btn active" href="#" data-toggle="tab" data-target="#tab-note">Add Note</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn" href="#" data-toggle="tab" data-target="#tab-phone">Assign phone Number</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn" href="#" data-toggle="tab" data-target="#tab-tag">
+                                                Add tag
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g><g><path fill="#53a6fa" d="M8.92.423c4.799 0 8.702 3.904 8.702 8.702s-3.903 8.702-8.702 8.702c-4.8 0-8.702-3.903-8.702-8.702C.218 4.326 4.12.423 8.92.423zm0 16.056c4.055 0 7.354-3.299 7.354-7.354s-3.3-7.354-7.354-7.354c-4.055 0-7.354 3.299-7.354 7.354s3.299 7.354 7.354 7.354z"/></g><g><path fill="#53a6fa" d="M12.29 8.39H9.594V5.694a.674.674 0 0 0-1.348 0V8.39H5.55a.675.675 0 1 0 0 1.348h2.696v2.696a.674.674 0 1 0 1.348 0V9.738h2.696a.674.674 0 1 0 0-1.348z"/></g></g></svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn" href="#" data-toggle="tab" data-target="#tab-feedback">Feedback</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="dropdown">
+                                                <button class="nav-link btn dropdown-toggle" data-toggle="dropdown">Lead Score</button>
+                                                <div class="dropdown-menu dropdown-lead-score">
+                                                    <a class="dropdown-item" href="#" data-toggle="tab" data-target="#tab-lead-qualifed">Qualifed</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="tab" data-target="#tab-lead-badfit">Bad Fit</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn" href="#" data-toggle="tab" data-target="#tab-contact">Add Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane animate fadeIn active" id="tab-note">
+                                        <div class="text-right m-3 m-md-3 m-lg-4">
+                                            <textarea class="form-control mb-3" rows="5" placeholder="Add notes"></textarea>
+                                            <button type="submit" class="btn primary">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane animate fadeIn" id="tab-phone">
+                                        <div class="d-flex m-3 m-md-3 m-lg-4">
+                                            <input type="tel" class="form-control" id="phone" placeholder="(201)555-1234">
+                                            <button type="submit" class="btn primary ml-3">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane animate fadeIn" id="tab-tag">
+                                        <div class="tag-list m-3 m-md-3 m-lg-4">
+                                            <button type="button" class="btn teal">New Sale</button>
+                                            <button type="button" class="btn amber">Sales Promotion</button>
+                                        </div>
+                                        <div class="suggestion p-3 p-md-3 p-lg-4">
+                                            <h3 class="text-left">Sugessions</h3>
+                                            <div class="suggestion-list">
+                                                <button type="button" class="btn white">New Sale</button>
+                                                <button type="button" class="btn white">Sales Promotion</button>
+                                                <button type="button" class="btn white">Lorem Ipsum</button>
+                                                <button type="button" class="btn white">Lorem Ipsum</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane animate fadeIn" id="tab-feedback">
+                                        <div class="feedback m-3 m-md-3 m-lg-4 text-right">
+                                            <div class="feedback-list">
+                                                <div class="row wrapper">
+                                                    <div class="col-2 col-md-2 col-lg-2 star">
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="col-2 col-md-2 col-lg-2 star">
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="col-2 col-md-2 col-lg-2 star">
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="col-2 col-md-2 col-lg-2 star">
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="col-2 col-md-2 col-lg-2 star">
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <div class="col-2 col-md-2 col-lg-2 rate">
+                                                        4.0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <textarea class="form-control mb-3" rows="3" placeholder="Comments if any:"></textarea>
+                                            <button type="submit" class="btn primary">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane animate fadeIn" id="tab-lead-qualifed">
+                                        <div class="lead-list ml-3 ml-md-3 ml-lg-4 mr-3 mr-md-3 mr-lg-4">
+                                            <div class="row wrapper">
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="item active">Qualified</div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="item">Bad Fit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane animate fadeIn" id="tab-lead-badfit">
+                                        <div class="lead-list ml-4 mr-4">
+                                            <div class="row wrapper">
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="item">Qualified</div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="item active">Bad Fit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane animate fadeIn" id="tab-contact">
+                                        <div class="contact-form">
+                                            <div class="nav-active-primary mb-0">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#" data-toggle="tab" data-target="#tab-individual">Individual</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link " href="#" data-toggle="tab" data-target="#tab-company">Company</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content pl-3 pl-md-3 pl-lg-4 pr-3 pr-md-3 pr-lg-4 mb-3 mb-md-3 mb-lg-4">
+                                                <div class="tab-pane animate fadeIn text-muted text-left p-3 p-md-3 p-lg-4 border-top-0 active" id="tab-individual">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-12 col-md-6 col-lg-6">
+                                                            <label for="inputCustomerName">Customer Name</label>
+                                                            <input type="email" class="form-control" id="inputCustomerName">
+                                                        </div>
+                                                        <div class="form-group col-12 col-md-6 col-lg-6">
+                                                            <label for="inputCustomerEmail">Customer Email</label>
+                                                            <input type="password" class="form-control" id="inputCustomerEmail">
+                                                        </div>
+                                                        <div class="form-group col-12 col-md-6 col-lg-6">
+                                                            <label for="inputCustomerCountry">Customer Country</label>
+                                                            <select id="inputCustomerCountry" class="form-control" tabindex="-1" aria-hidden="true">
+                                                                <option value="0">USA</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-12 col-md-6 col-lg-6">
+                                                            <label for="inputRelateCompany">Relate Company</label>
+                                                            <select id="inputRelateCompany" class="form-control" tabindex="-1" aria-hidden="true">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-12 col-md-6 col-lg-6">
+                                                            <label for="inputContactOwner">Contact Owner</label>
+                                                            <select id="inputContactOwner" class="form-control" tabindex="-1" aria-hidden="true">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane animate fadeIn text-muted text-left p-3 p-md-3 p-lg-4 border-top-0" id="tab-company">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-12 col-md-6 col-lg-6">
+                                                            <label for="inputCompanyCustomerName">Customer Name</label>
+                                                            <input type="email" class="form-control" id="inputCompanyCustomerName">
+                                                        </div>
+                                                        <div class="form-group col-12 col-md-6 col-lg-6">
+                                                            <label for="inputCompanyOwnerName">Owner Name</label>
+                                                            <input type="password" class="form-control" id="inputCompanyOwnerName">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-6 text-center text-md-center text-lg-left">
+                                        <button type="button" class="btn-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24"><g><g><path fill="#a8a8a8" d="M7.562 17.764c2.25 0 4.079-1.83 4.079-4.08v-9.16A4.083 4.083 0 0 0 7.562.444a4.083 4.083 0 0 0-4.079 4.08v9.16a4.084 4.084 0 0 0 4.079 4.08z"/></g><g><path fill="#a8a8a8" d="M14.118 11.246h-.812a.473.473 0 0 0-.473.473v1.661a5.276 5.276 0 0 1-5.27 5.27 5.276 5.276 0 0 1-5.272-5.27v-1.66a.473.473 0 0 0-.473-.474h-.812a.472.472 0 0 0-.472.473v1.661c0 3.474 2.701 6.537 6.15 6.971v1.177H3.055a.472.472 0 0 0-.472.473v.811c0 .261.211.473.472.473h9.012a.472.472 0 0 0 .472-.473v-.81a.472.472 0 0 0-.472-.474H8.441v-1.177c3.448-.434 6.15-3.497 6.15-6.97v-1.662a.472.472 0 0 0-.473-.473z"/></g></g></svg>
+                                            Mute
+                                        </button>
+                                        <button type="button" class="btn-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><path fill="#a8a8a8" d="M17.94 11.865a5.902 5.902 0 0 0-3.284-5.287v10.58a5.919 5.919 0 0 0 3.284-5.293z"/></g><g><path fill="#a8a8a8" d="M.208 7.924v7.882h5.254l6.567 6.567V1.357L5.462 7.924z"/></g><g><path fill="#a8a8a8" d="M14.656.346v2.712c3.796 1.13 6.567 4.643 6.567 8.808 0 4.163-2.77 7.676-6.567 8.806v2.712c5.261-1.195 9.194-5.891 9.194-11.518 0-5.63-3.933-10.325-9.194-11.52z"/></g></g></svg>
+                                            Speaker
+                                        </button>
+
+                                    </div>
+                                    <div class="col-12 col-md-12 col-lg-6 text-center text-md-right text-lg-right">
+                                        <button type="button" class="btn btn-visit" data-dismiss="modal">Visit Lead Page</button>
+                                        <button type="button" class="btn btn-end" data-dismiss="modal">End</button>
+                                        <button type="button" class="btn btn-lock" data-dismiss="modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17"><g><g><path fill="#fff" d="M11.278 6.2c1.137 0 2.062.925 2.062 2.063v6.16a2.065 2.065 0 0 1-2.062 2.064H2.58a2.065 2.065 0 0 1-2.062-2.063V8.263c0-1.138.925-2.063 2.062-2.063h.836V3.967c0-1.9 1.575-3.444 3.512-3.444 1.936 0 3.512 1.545 3.512 3.444V5.37H8.732V3.967c0-.957-.809-1.736-1.804-1.736s-1.804.779-1.804 1.736V6.2zm.354 2.063a.355.355 0 0 0-.354-.354H2.58a.354.354 0 0 0-.354.354v6.16c0 .196.158.356.354.356h8.698c.195 0 .354-.16.354-.355z"/></g><g><path fill="#fff" d="M6.929 9.41a1.117 1.117 0 0 0-.605 2.057v1.326a.604.604 0 0 0 1.208 0V11.47a1.118 1.118 0 0 0-.603-2.059z"/></g></g></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end modal view 3-->
+        </div>
+        <!-- Footer -->
+        <div class="content-footer white " id="content-footer">
+            <div class="d-flex p-3">
+                <span class="text-sm text-muted flex">Limecall © 2019</span>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Content END-->
+    <!-- ############ LAYOUT END-->
+</div>
+<div class="modal fade" id="user" data-backdrop="true" aria-hidden="true">
+    <div class="modal-dialog modal-right white b-l">
+        <div class="d-flex flex-column h-100">
+            <div class="p-4 box">
+                <div class="pb-4 b-b _600">Change Profile Settings</div>
+                <form role="form" class="col-md-9 p-0 pb-5">
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>First Name</label></div>
+                        <div class="col-md-5"><input type="text" class="form-control" placeholder="Test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Email</label></div>
+                        <div class="col-md-5"><input type="email" class="form-control" placeholder="Test@test.test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Password</label></div>
+                        <div class="col-md-5"><input type="password" class="form-control"></div>
+                    </div>
+                    <button type="submit" class="btn primary mt-2">Save changes</button>
+                </form>
+                <div class="pb-4 b-b _600">Delete your account</div>
+                <button type="submit" class="btn danger mt-4">Delete account</button>
+                <p class="item-except text-sm mt-2 text-muted h-1x">Delete your account and all of your source data. This is irreversible.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="m-md" class="modal video_modal" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0 pt-5">
+                <h5 class="modal-title w-100 text-center">Intro to Limecall</h5>
+                <a data-dismiss="modal" class="ml-auto video_modal__close">
+                    <span class="text-lg l-h-1x">×</span>
+                </a>
+            </div>
+            <div class="modal-body text-center p-lg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kWcHPKNjuFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequatur corporis dicta ducimus excepturi illum inventore itaque necessitatibus nisi, nobis non odit omnis praesentium quae rerum sit temporibus, veritatis.</p>
+                <a class="btn btn-primary text-white mb-4" href="#/">Let's get started</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+<div id="m-export" class="modal" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="ativities_modal__top">
+                    <h5>Export</h5>
+                </div>
+                <a href="#/" data-dismiss="modal"><i class="fa fa-close"></i></a>
+            </div>
+            <div class="modal-body text-center p-0">
+                <div class="col-12 col-lg-12 pt-3">
+                    <p class="text-left">Choose what you'd like to export and we will email you a link to the generated file.</p>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Agents</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <div class="form-group mr-2  activities_select">
+                                <select class="form-control" data-plugin="select2" data-option="{}">
+                                    <option value="Akshay">Akshay</option>
+                                    <option value="Steve">Steve</option>
+                                    <option value="Mark">Mark</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Status</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status" checked>
+                                    <i class="primary"></i>
+                                    Completed
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Failed
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Missed by user
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Missed by agent
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Ongoing
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Score</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score" checked>
+                                    <i class="primary"></i>
+                                    Qualified
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score">
+                                    <i class="primary"></i>
+                                    Unqualified
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score">
+                                    <i class="primary"></i>
+                                    Ready to buy
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn primary p-x-md" data-dismiss="modal">Export</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+<!-- build:js ../assets/js/app.min.js -->
+<!-- jQuery -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- core -->
+<script src="../libs/pace-progress/pace.min.js"></script>
+<script src="../libs/pjax/pjax.min.js"></script>
+<script src="../assets/js/lazyload.config.js"></script>
+<script src="../assets/js/lazyload.js"></script>
+<script src="../assets/js/plugin.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scrollto.js"></script>
+<script src="../assets/js/toggleclass.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/ajax.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.0/js/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input);
+</script>
+<!-- endbuild -->
+</body>
+</html>

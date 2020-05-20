@@ -929,6 +929,576 @@ body .sl-icon > i {
     color: #2196f3;
 }
 
+/*Modal incoming*/
+
+.modal-incoming .modal-dialog {
+    max-width: 590px;
+}
+
+.modal-incoming .modal-content,
+.modal-progress .modal-content {
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.modal-incoming .modal-header,
+.modal-progress .modal-header {
+    height: 42px;
+    background-image: linear-gradient(to right, #56ccf2 0%, #2f80ed 100%, #2f80ed 100%);
+    padding: 10px 24px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.modal-incoming .modal-header .modal-title,
+.modal-progress .modal-header .modal-title {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: initial;
+    letter-spacing: 0.5px;
+}
+
+.modal-incoming .modal-header .modal-title img,
+.modal-progress .modal-header .modal-title img {
+    margin-right: 11px;
+}
+
+.modal-incoming .modal-body {
+    padding: 24px;
+    background-color: white;
+}
+
+.modal-incoming .modal-body .user {
+    display: flex;
+    align-items: center;
+}
+
+.modal-incoming .modal-body .user-avatar {
+    width: 62px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.modal-incoming .modal-body .user-avatar img {
+    max-width: 100%;
+}
+
+.modal-incoming .modal-body .user-info h4 {
+    color: #283238;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: initial;
+    letter-spacing: 0.55px;
+    margin-bottom: 7px;
+}
+
+.modal-incoming .modal-body .user-info p {
+    color: #283238;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: initial;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.modal-incoming .modal-body .user-info p.color-grey {
+    color: #cccccc;
+}
+
+.modal-incoming .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border-top: 0;
+}
+
+.modal-incoming .modal-footer .btn {
+    width: 50%;
+    height: 69px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+.modal-incoming .modal-footer .btn.btn-reject {
+    background-color: #fff3f5;
+    color: #dc3545;
+    border-bottom-left-radius: 15px;
+}
+
+.modal-incoming .modal-footer .btn.btn-reject:hover,
+.modal-incoming .modal-footer .btn.btn-reject:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal-incoming .modal-footer .btn.btn-accept {
+    background-color: #f3fff5;
+    color: #28a745;
+    border-bottom-right-radius: 15px;
+}
+
+.modal-incoming .modal-footer .btn.btn-accept:hover,
+.modal-incoming .modal-footer .btn.btn-accept:focus {
+    background-color: #28a745;
+    color: white;
+}
+
+/*Modal call in progress*/
+
+.modal-progress .modal-body {
+    padding: 24px 0 0 0;
+    background-color: white;
+}
+
+.modal-progress .modal-content {
+    min-height: 523px;
+}
+
+.modal-progress .modal-dialog {
+    max-width: 1000px;
+}
+
+.modal-progress .modal-body .details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f3f6f9;
+    border-radius: 5px;
+    margin: 0 24px 20px 24px;
+}
+
+.modal-progress .modal-body .details .details-left,
+.modal-progress .modal-body .details .details-right {
+    width: 50%;
+    padding: 20px 30px;
+}
+
+.modal-progress .modal-body .details .details-left {
+    border-right: 2px solid white;
+}
+
+.modal-progress .modal-body .details .details-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.modal-progress .modal-body .details .details-left ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.modal-progress .modal-body .details .details-left ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.modal-progress .modal-body .details .details-left p {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+    margin: 0;
+}
+
+.modal-progress .modal-body .details .details-left a:hover {
+    color: #53a6fa;
+}
+
+.modal-progress .modal-body .details .details-left p b {
+    color: #808080;
+}
+
+.modal-progress .modal-body .details .details-left p:first-of-type {
+    width: 30%;
+    position: relative;
+}
+
+.modal-progress .modal-body .details .details-left p:first-of-type:before {
+    position: absolute;
+    content: ':';
+    right: 0;
+}
+
+.modal-progress .modal-body .details .details-left p:last-of-type {
+    width: 55%;
+}
+
+.modal-progress .modal-body .details .details-right .user {
+    display: flex;
+    align-items: center;
+}
+
+.modal-progress .modal-body .details .details-right .user .user-avatar {
+    width: 54px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.modal-progress .modal-body .details .details-right .user .user-avatar img {
+    max-width: 100%;
+}
+
+.modal-progress .modal-body .details .details-right .user .user-info h4 {
+    color: #283238;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: initial;
+    letter-spacing: 0.55px;
+    margin-bottom: 7px;
+}
+
+.modal-progress .modal-body .details .details-right .user .user-info p {
+    color: #283238;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: initial;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.modal-progress .modal-body .details .details-right .user .user-info p.color-grey {
+    color: #ccc;
+}
+
+.modal-progress .nav-active-primary {
+    margin: 0 24px 30px 24px;
+}
+
+.modal-progress .tabs .nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-progress .tabs .nav .nav-item {
+    margin-right: 13px;
+}
+
+.modal-progress .tabs .nav .nav-item:last-of-type {
+    margin-right: 0;
+}
+
+.modal-progress .tabs .nav .nav-item .nav-link {
+    border: 1px solid #53a6fa;
+    color: #53a6fa!important;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+    padding: 5px 15px;
+}
+
+.modal-progress .tabs .nav .nav-item .nav-link svg,
+.modal-progress .tabs .nav .nav-item .nav-link img,
+.modal-progress .tabs .nav .nav-item .nav-link i {
+    margin-left: 13px;
+}
+
+.modal-progress .tabs .nav .nav-item .nav-link.active {
+    color: white!important;
+    box-shadow: none;
+}
+
+.modal-progress .tabs .nav .nav-item .nav-link.active svg path {
+    fill: white;
+}
+
+.modal-progress .tabs .nav .nav-item .dropdown-menu {
+    padding: 0;
+    border: 1px solid #53a6fa;
+    box-shadow: none;
+    min-width: auto;
+    width: 100%;
+    margin-top: -3px;
+}
+
+.modal-progress .tabs .nav .nav-item .dropdown-menu .dropdown-item {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+    padding: 5px 15px;
+}
+
+.modal-progress .tabs .nav .nav-item .dropdown-menu .dropdown-item.active {
+    color: white;
+    background-color: #53a6fa;
+}
+
+.modal-progress .tabs .tab-content textarea,
+.modal-progress .tabs .tab-content textarea::placeholder {
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+}
+
+.modal-progress .tabs .tab-content input[type="tel"] {
+    height: 46px;
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+}
+
+.modal-progress .tabs .tab-content input[type="tel"]::placeholder {
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+}
+
+.modal-progress .tabs .tab-content button[type="submit"] {
+    min-width: 121px;
+    height: 46px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: initial;
+    letter-spacing: 0.18px;
+}
+
+.modal-progress .tabs .tab-content .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.modal-progress .tabs .tab-content .tag-list button {
+    color: white;
+    height: 42px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+    padding: 5px 15px;
+    margin: 0 13px 13px 0;
+}
+
+.modal-progress .tabs .tab-content .tag-list button:last-of-type {
+    margin-right: 0;
+}
+
+.modal-progress .tabs .tab-content .suggestion {
+    background-color: #f3f6f9;
+}
+
+.modal-progress .tabs .tab-content .suggestion h3 {
+    color: #808080;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    margin-bottom: 10px;
+}
+
+.modal-progress .tabs .tab-content .suggestion .suggestion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.modal-progress .tabs .tab-content .suggestion .suggestion-list button {
+    color: #999;
+    height: 42px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    border: 0;
+    padding: 5px 15px;
+    margin: 0 13px 13px 0;
+}
+
+.modal-progress .tabs .tab-content .feedback .feedback-list {
+    background-color: #f7f8f9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.modal-progress .tabs .tab-content .feedback .feedback-list .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-progress .tabs .tab-content .feedback .feedback-list .star {
+    border-right: 1px solid white;
+    padding: 11px;
+    text-align: center;
+}
+
+.modal-progress .tabs .tab-content .feedback .feedback-list .star i {
+    font-size: 26px;
+    color: #ffc900;
+}
+
+.modal-progress .tabs .tab-content .feedback .feedback-list .rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #383838;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.11px;
+}
+
+.modal-progress .tabs .tab-content .feedback textarea,
+.modal-progress .tabs .tab-content .feedback textarea::placeholder {
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    border-color: #f7f8f9;
+}
+
+.modal-progress .tabs .tab-content .suggestion .suggestion-list button:last-of-type {
+    margin-right: 0;
+}
+
+.modal-progress .tabs .tab-content .lead-list .item {
+    background-color: #f3f6f9;
+    color: #283238;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: initial;
+    letter-spacing: 0.55px;
+    text-align: left;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 14px 15px;
+}
+
+.modal-progress .tabs .tab-content .lead-list .item.active {
+    border-color: #28a745;
+    position: relative;
+}
+
+.modal-progress .tabs .tab-content .lead-list .item.active:before {
+    position: absolute;
+    content: '\f058';
+    right: 3%;
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    font-weight: 900;
+    color: #28a745;
+}
+
+.modal-progress .tabs .tab-content .contact-form .nav .nav-item {
+    width: 50%;
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    margin: 0;
+}
+
+.modal-progress .tabs .tab-content .contact-form .nav .nav-item .nav-link {
+    border-color: #e7edf2;
+    color: #b3b3b3!important;
+    padding: 8px 15px;
+}
+
+.modal-progress .tabs .tab-content .contact-form .nav .nav-item .nav-link.active {
+    background-color: #e7edf2!important;
+    color: #4d4d4d!important;
+}
+
+.modal-progress .tabs .tab-content .contact-form .nav .nav-item:first-of-type .nav-link {
+    border-radius: 0;
+    border-top-left-radius: 5px;
+}
+
+.modal-progress .tabs .tab-content .contact-form .nav .nav-item:nth-of-type(2) .nav-link {
+    border-radius: 0;
+    border-top-right-radius: 5px;
+}
+
+.modal-progress .tabs .tab-content .contact-form .tab-content .tab-pane {
+    border: 1px solid #e7edf2;
+}
+
+.modal-progress .tabs .tab-content .contact-form .form-group label {
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.modal-progress .tabs .tab-content .contact-form .form-group input,
+.modal-progress .tabs .tab-content .contact-form .form-group select {
+    height: 46px;
+}
+
+.modal-progress .modal-footer {
+    background-color: #1a1a1a;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.modal-progress .modal-footer .btn-icon {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border: 0;
+    color: #a8a8a8;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: initial;
+    letter-spacing: 0.33px;
+    margin-right: 30px;
+}
+
+.modal-progress .modal-footer .btn-icon:last-of-type {
+    margin-right: 0;
+}
+
+.modal-progress .modal-footer .btn-icon svg,
+.modal-progress .modal-footer .btn-icon img,
+.modal-progress .modal-footer .btn-icon i {
+    margin-bottom: 5px;
+}
+
+.modal-progress .modal-footer .btn-icon:hover svg path {
+    fill: white;
+}
+
+.modal-progress .modal-footer .btn-icon:hover {
+    color: white;
+}
+
+.modal-progress .modal-footer .btn {
+    height: 37px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: initial;
+    letter-spacing: 0.45px;
+    margin-left: 13px;
+}
+
+.modal-progress .modal-footer .btn:first-of-type {
+    margin-left: 0;
+}
+
+.modal-progress .modal-footer .btn.btn-visit {
+    background-color: #28a745;
+}
+
+.modal-progress .modal-footer .btn.btn-end,
+.modal-progress .modal-footer .btn.btn-lock {
+    background-color: #b72525;
+}
+
+
+
 @media screen and (max-width: 767px) {
     .modal.fade .modal-right {
         left: 5%;
@@ -969,6 +1539,120 @@ body .sl-icon > i {
 @media screen and (max-width: 992px) {
     .app-aside .sidenav {
         width: 90px;
+    }
+    .modal-incoming .modal-header,
+    .modal-progress .modal-header {
+        padding: 10px 16px;
+    }
+    .modal-incoming .modal-header .modal-title,
+    .modal-progress .modal-header .modal-title {
+        font-size: 18px;
+    }
+    .modal-incoming .modal-body {
+        padding: 16px;
+    }
+    .modal-incoming .modal-body .user-avatar {
+        width: 50px;
+        margin-right: 16px;
+    }
+    .modal-incoming .modal-body .user-info h4 {
+        font-size: 20px;
+    }
+    .modal-incoming .modal-body .user-info p {
+        font-size: 16px;
+    }
+    .modal-incoming .modal-footer .btn {
+        height: 50px;
+        font-size: 18px;
+    }
+    .modal-progress .modal-body {
+        padding-top: 16px;
+    }
+    .modal-progress .modal-body .details {
+        margin: 0 16px 16px 16px;
+    }
+    .modal-progress .modal-body .details .details-left,
+    .modal-progress .modal-body .details .details-right {
+        width: 100%;
+        padding: 16px;
+    }
+    .modal-progress .modal-body .details .details-left p {
+        font-size: 14px;
+    }
+    .modal-progress .modal-body .details .details-right .user .user-avatar {
+        width: 50px;
+        margin-right: 16px;
+    }
+    .modal-progress .modal-body .details .details-right .user .user-info p {
+        font-size: 16px;
+    }
+    .modal-progress .nav-active-primary {
+        margin: 0 16px 16px 16px;
+    }
+    .modal-progress .tabs .nav .nav-item {
+        margin: 0 5px 5px 0;
+    }
+    .modal-progress .tabs .nav .nav-item .nav-link {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .modal-progress .tabs .tab-content button[type="submit"] {
+        height: 33px;
+        font-size: 14px;
+    }
+    .modal-progress .modal-footer .btn-icon {
+        margin: 0 15px 15px;
+    }
+    .modal-progress .modal-footer .btn {
+        height: 33px;
+        font-size: 14px;
+    }
+    .modal-progress .tabs .tab-content input[type="tel"] {
+        height: 33px;
+        font-size: 14px;
+    }
+    .modal-progress .tabs .tab-content input[type="tel"]::placeholder {
+        font-size: 14px;
+    }
+    .modal-progress .tabs .tab-content .tag-list button {
+        height: 33px;
+        font-size: 14px;
+        margin: 0 5px 5px 0;
+    }
+    .modal-progress .tabs .tab-content .suggestion h3 {
+        font-size: 16px;
+    }
+    .modal-progress .tabs .tab-content .suggestion .suggestion-list button {
+        height: 33px;
+        font-size: 14px;
+        margin: 0 5px 5px 0;
+    }
+    .modal-progress .tabs .tab-content .feedback .feedback-list .star {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .modal-progress .tabs .tab-content .feedback .feedback-list .star i {
+        font-size: 18px;
+    }
+    .modal-progress .tabs .tab-content .feedback .feedback-list .rate {
+        font-size: 16px;
+    }
+    .modal-progress .tabs .tab-content .lead-list .item {
+        font-size: 14px;
+        margin-bottom: 15px;
+        padding: 7px 15px;
+    }
+    .modal-progress .tabs .tab-content .lead-list .item.active:before {
+        font-size: 16px;
+    }
+    .modal-progress .tabs .tab-content .contact-form .nav .nav-item .nav-link {
+        padding: 5px 10px;
+    }
+    .modal-progress .tabs .tab-content .contact-form .form-group input,
+    .modal-progress .tabs .tab-content .contact-form .form-group select {
+        height: 33px;
     }
 }
 
