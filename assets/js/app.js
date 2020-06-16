@@ -49,7 +49,7 @@ var app = app || {};
       // init the plugin
       $('body').find('[data-plugin]').plugin();
 
-    }
+    };
     
    	app.init();
 
@@ -60,6 +60,32 @@ var app = app || {};
 })(jQuery, app);
 
 $( document ).ready(function() {
+
+    $(function() {
+        $('.calendar').pignoseCalendar({
+            theme: 'blue',
+            click: function(event, context) {
+               $('#step-1').hide();
+               $('#step-2').show();
+            }
+
+        });
+    });
+
+    $('#step-2 .prev-step a').on('click', function () {
+       $('#step-2').hide();
+       $('#step-1').show();
+    });
+
+    $('.slot_div .time-button').on('click', function () {
+        $('#step-2').hide();
+        $('#step-3').show();
+    });
+
+    $('#step-3 .prev-step a').on('click', function () {
+        $('#step-3').hide();
+        $('#step-2').show();
+    });
 
     // Lead popup
 

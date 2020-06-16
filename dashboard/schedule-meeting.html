@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.svg">
+    <!-- style -->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <!-- build:css ../assets/css/app.min.css -->
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/schedule.css" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/pignose.calendar.min.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+
+<section class="schedule-profile schedule-meeting">
+    <div class="col-12 col-md-4 col-lg-4 profile">
+        <div class="avatar">
+            <img src="../assets/images/avatar-rifad.png" alt="Avatar" />
+        </div>
+        <div class="about">
+            <div class="about-name">Rifad</div>
+            <p class="text-white"> Senior Product Specialist at <a class="text-white" href="#/">OutreachPlus</a></p>
+            <a href="schedule.html" class="btn btn-fw white text-primary">View Profile</a>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 col-lg-8 form white">
+        <div class="wrapper" id="step-1">
+            <div class="form-top b-b">
+                <p class="text-center text-md">Schedule time with Rifad</p>
+            </div>
+            <div class="form-title">
+                <h4 class="text-center">Which day is best for you?</h4>
+            </div>
+            <div class="form-timezone">
+                <div class="form-group">
+                    <label>Timezone</label>
+                    <select id="select2-single" data-plugin="select2" class="form-control">
+                        <optgroup>
+                            <option value="1">Pacific/Midway (SST) -11:00</option>
+                            <option value="2">America/Adak (HDT) -09:00</option>
+                            <option value="3">Europe/Berlin (CEST) +02:00</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="form-calendar">
+                <div class="calendar"></div>
+                <div class=""></div>
+            </div>
+        </div>
+        <div class="wrapper" id="step-2">
+            <div class="prev-step">
+                <a href="#step-3"><i class="fa fa-angle-left"></i></a>
+            </div>
+            <div class="form-top b-b">
+                <p class="text-center choosen-date text-md">Thursday, June 16, 2020</p>
+            </div>
+            <div class="form-title text-center">
+                <h4>What time works best?</h4>
+                <p>Current Timezone (Europe/Prague)</p>
+            </div>
+            <div class="slot_div" id="slot_div">
+                <div class="slot-list">
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="9">
+                            <span class="time-button-title">09.00am</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="10">
+                            <span class="time-button-title">10.00am</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="11">
+                            <span class="time-button-title">11.00am</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="12">
+                            <span class="time-button-title">12.00pm</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="13">
+                            <span class="time-button-title">01.00pm</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="14">
+                            <span class="time-button-title">02.00pm</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="15">
+                            <span class="time-button-title">03.00pm</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="16">
+                            <span class="time-button-title">04.00pm</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="17">
+                            <span class="time-button-title">05.00pm</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="18">
+                            <span class="time-button-title">06.00pm</span>
+                        </button>
+                    </div>
+                    <div class="slot is-available mb-3">
+                        <button class="time-button btn btn-outline b-primary text-primary w-100" type="button" value="7.00pm">
+                            <span class="time-button-title">07.00pm</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="wrapper" id="step-3">
+            <div class="prev-step">
+                <a href="#step-3"><i class="fa fa-angle-left"></i></a>
+            </div>
+            <div class="form-title text-center">
+                <h4>Confirm your new meeting</h4>
+                <p>All fields required</p>
+            </div>
+            <div class="confirm-form">
+                <form>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="inputName1" placeholder="Name" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="email" class="form-control" id="inputEmail1" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="tel" class="form-control" id="inputPhone1" placeholder="Phone" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div class="confirm-block">
+                            <div class="icon">
+                                <img src="../assets/images/icon-confirm.png" alt="Icon" />
+                            </div>
+                            <div class="confirm-info">
+                                <div class="date text-md">12:00pm — 12:30pm</div>
+                                <div class="date text-md">Thursday, June 18, 2020</div>
+                                <div class="location text-md">Current Timezone (Europe/Prague)</div>
+                            </div>
+                            <input class="btn btn-fw primary w-100" type="submit" value="Book meeting">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- build:js ../assets/js/app.min.js -->
+<!-- jQuery -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- core -->
+<script src="../libs/pace-progress/pace.min.js"></script>
+<script src="../libs/pjax/pjax.min.js"></script>
+<script src="../assets/js/lazyload.config.js"></script>
+<script src="../assets/js/lazyload.js"></script>
+<script src="../assets/js/plugin.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scrollto.js"></script>
+<script src="../assets/js/toggleclass.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/ajax.js"></script>
+<script type="text/javascript" src="../assets/js/pignose.calendar.full.min.js"></script>
+<script src="../assets/js/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>

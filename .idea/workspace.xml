@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8beb0df9-dd9b-45f8-b33e-bdca5f00d9b1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/avatar-arantxa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/avatar-unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icon-incoming.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/modals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-    </list>
+    <list default="true" id="8beb0df9-dd9b-45f8-b33e-bdca5f00d9b1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
@@ -31,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modals.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/modals.html">
+      <file leaf-file-name="modals-design-1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard/modals-design-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1966">
-              <caret line="651" column="69" lean-forward="true" selection-start-line="651" selection-start-column="69" selection-end-line="651" selection-end-column="69" />
+            <state relative-caret-position="254">
+              <caret line="799" column="53" lean-forward="true" selection-start-line="799" selection-start-column="53" selection-end-line="799" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -89,8 +81,8 @@
       <find>tab-phone</find>
       <find>tab-tag</find>
       <find>tab-content pl-4 pr-4 mb-4</find>
-      <find>.modal-progress .tabs .tab-content .feedback .feedback-list .star</find>
       <find>col-lg-6</find>
+      <find>.modal-progress .tabs .tab-content .feedback .feedback-list .star</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +178,7 @@
             <path>
               <item name="Apply" type="b2602c69:ProjectViewProjectNode" />
               <item name="Apply" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,12 +268,12 @@
       <workItem from="1589792777608" duration="3702000" />
       <workItem from="1589807258815" duration="6214000" />
       <workItem from="1589871388225" duration="11680000" />
-      <workItem from="1589960079317" duration="2705000" />
+      <workItem from="1589960079317" duration="3307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253518000" />
+    <option name="totallyTimeSpent" value="254120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="812" extended-state="0" />
@@ -628,17 +620,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/modals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1966">
-          <caret line="651" column="69" lean-forward="true" selection-start-line="651" selection-start-column="69" selection-end-line="651" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="1644" column="18" selection-start-line="1644" selection-start-column="18" selection-end-line="1644" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/modals-design-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="799" column="53" lean-forward="true" selection-start-line="799" selection-start-column="53" selection-end-line="799" selection-end-column="53" />
         </state>
       </provider>
     </entry>

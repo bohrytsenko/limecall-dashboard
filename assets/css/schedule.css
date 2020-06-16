@@ -1,0 +1,236 @@
+/*Schedule profile*/
+
+.schedule-profile {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(1, 118, 255), rgb(1, 160, 255));
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.schedule-profile .item {
+  max-width: 650px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 4px 22px 0;
+}
+
+.schedule-profile .item .item-top {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px 20px 15px 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.schedule-profile .item .item-top .avatar {
+  margin-right: 15px;
+}
+
+.schedule-profile .item .item-top .avatar img {
+  height: 100px;
+  width: 100px;
+  border: 4px solid white;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+.schedule-profile .item .item-top .about .about-name {
+  color: white;
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.schedule-profile .item .item-top .about .about-status {
+
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.schedule-profile .item .item-top .about .about-status span {
+  display: inline-flex;
+  width: 11px;
+  height: 11px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.schedule-profile .item .item-bottom {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 40px 100px;
+}
+
+.schedule-profile .item .item-bottom .position {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.schedule-profile .item .item-bottom .position i {
+  margin-right: 15px;
+}
+
+.schedule-profile .item .item-bottom .position p {
+  margin: 0;
+}
+
+.schedule-profile .item .item-bottom .buttons a i {
+  margin-right: 10px;
+}
+
+/*Schedule meeting*/
+
+.schedule-profile .profile {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schedule-profile .profile .avatar {
+  margin-bottom: 15px;
+}
+
+.schedule-profile .profile .avatar img {
+  height: 100px;
+  width: 100px;
+  border: 4px solid white;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+.schedule-profile .profile .about {
+  text-align: center;
+}
+
+.schedule-profile .profile .about .about-name {
+  color: white;
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.schedule-profile .form {
+  height: 100vh;
+  padding-bottom: 40px;
+  overflow-x: scroll;
+}
+
+.schedule-profile .form .wrapper {
+  display: none;
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.schedule-profile .form .wrapper#step-1 {
+  display: block;
+}
+
+.schedule-profile .form .wrapper .prev-step {
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+
+.schedule-profile .form .wrapper .form-top {
+  padding: 40px 0 20px 0;
+}
+
+.schedule-profile .form .wrapper .form-title {
+  padding: 40px 0 20px 0;
+}
+
+.schedule-profile .form .wrapper .form-timezone {
+  max-width: 350px;
+  margin: 0 auto 40px auto;
+}
+
+.form-calendar .pignose-calendar.pignose-calendar-blue .pignose-calendar-top {
+  background: linear-gradient(135deg, rgb(1, 118, 255), rgb(1, 160, 255));
+}
+
+.form-calendar .pignose-calendar .icon-arrow-left,
+.form-calendar .pignose-calendar .icon-arrow-right {
+  font-family: FontAwesome!important;
+}
+
+.form-calendar .pignose-calendar .icon-arrow-left:before {
+  content: "\f053";
+}
+
+.form-calendar .pignose-calendar .icon-arrow-right:before {
+  content: "\f054";
+}
+
+.schedule-profile .form .wrapper .confirm-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(120, 130, 140, 0.2);
+  border-top: 4px solid #53a6fa;
+  border-radius: 0.25rem;
+  padding-top: 20px;
+}
+
+.schedule-profile .form .wrapper .confirm-block .icon {
+  width: 150px;
+  margin-right: 15px;
+  padding: 0 15px 20px 15px;
+}
+
+.schedule-profile .form .wrapper .confirm-block .icon img {
+  max-width: 100%;
+}
+
+.schedule-profile .form .wrapper .confirm-block .confirm-info {
+  padding: 0 15px 20px 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .schedule-profile .item .item-bottom {
+    padding: 40px 20px;
+  }
+  .schedule-meeting {
+    min-height: auto;
+  }
+  .schedule-meeting .profile {
+    height: auto;
+    flex-direction: row;
+    padding: 15px;
+  }
+  .schedule-meeting .form {
+    height: auto;
+    overflow-x: auto;
+  }
+  .schedule-meeting .profile .avatar {
+    margin-right: 15px;
+  }
+  .schedule-meeting .profile .avatar img {
+    height: 70px;
+    width: 70px;
+  }
+  .schedule-meeting .profile .about {
+    text-align: left;
+  }
+  .schedule-meeting .profile .about .about-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .schedule-meeting .profile .about p {
+    margin-bottom: 5px;
+  }
+  .schedule-meeting .form .wrapper .form-top {
+    padding: 15px 0 0 0;
+  }
+  .schedule-meeting .form .wrapper .form-title {
+    padding: 15px 0;
+  }
+  .schedule-meeting .form .wrapper .prev-step {
+    top: 20px;
+  }
+}
