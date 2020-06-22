@@ -16,6 +16,7 @@
     <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.svg">
     <!-- style -->
     <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/font-awesome/css/fontawesome-stars.css" type="text/css" />
     <!-- build:css ../assets/css/app.min.css -->
     <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
@@ -474,6 +475,9 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title"><img src="../assets/img/icon-incoming.svg" alt="Icon" /> Incoming call</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body text-center p-lg">
                             <div class="user">
@@ -503,6 +507,9 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title"><img src="../assets/img/icon-incoming.svg" alt="Icon" /> Incoming call</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body text-center p-lg">
                             <div class="user">
@@ -531,7 +538,10 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title"><img src="../assets/img/icon-incoming.svg" alt="Icon" /> Call in Progress</h5>
+                            <h5 class="modal-title"><img src="../assets/img/icon-incoming.svg" alt="Icon" />Call in Progress (00:00:00)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body text-center p-lg">
                             <div class="details">
@@ -574,9 +584,9 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g><g><path fill="#53a6fa" d="M8.92.423c4.799 0 8.702 3.904 8.702 8.702s-3.903 8.702-8.702 8.702c-4.8 0-8.702-3.903-8.702-8.702C.218 4.326 4.12.423 8.92.423zm0 16.056c4.055 0 7.354-3.299 7.354-7.354s-3.3-7.354-7.354-7.354c-4.055 0-7.354 3.299-7.354 7.354s3.299 7.354 7.354 7.354z"/></g><g><path fill="#53a6fa" d="M12.29 8.39H9.594V5.694a.674.674 0 0 0-1.348 0V8.39H5.55a.675.675 0 1 0 0 1.348h2.696v2.696a.674.674 0 1 0 1.348 0V9.738h2.696a.674.674 0 1 0 0-1.348z"/></g></g></svg>
                                             </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link btn" href="#" data-toggle="tab" data-target="#tab-feedback">Feedback</a>
-                                        </li>
+                                        <!--<li class="nav-item">-->
+                                            <!--<a class="nav-link btn" href="#" data-toggle="tab" data-target="#tab-feedback">Feedback</a>-->
+                                        <!--</li>-->
                                         <li class="nav-item">
                                             <div class="dropdown">
                                                 <button class="nav-link btn dropdown-toggle" data-toggle="dropdown">Lead Score</button>
@@ -593,60 +603,60 @@
                                 </div>
                                 <div class="tab-content">
                                     <div class="tab-pane animate fadeIn active" id="tab-note">
-                                        <div class="text-right m-3 m-md-3 m-lg-4">
+                                        <div class="text-right m-3 m-md-3 m-lg-3">
                                             <textarea class="form-control mb-3" rows="5" placeholder="Add notes"></textarea>
                                             <button type="submit" class="btn primary">Save</button>
                                         </div>
                                     </div>
                                     <div class="tab-pane animate fadeIn" id="tab-phone">
-                                        <div class="d-flex m-3 m-md-3 m-lg-4">
+                                        <div class="d-flex mb-3 col-12 col-md-8 col-lg-6">
                                             <input type="tel" class="form-control" id="phone" placeholder="(201)555-1234">
                                             <button type="submit" class="btn primary ml-3">Save</button>
                                         </div>
                                     </div>
                                     <div class="tab-pane animate fadeIn" id="tab-tag">
-                                        <div class="tag-list m-3 m-md-3 m-lg-4">
+                                        <div class="tag-list m-3 m-md-3 m-lg-3">
                                             <button type="button" class="btn teal">New Sale</button>
                                             <button type="button" class="btn amber">Sales Promotion</button>
                                         </div>
-                                        <div class="suggestion p-3 p-md-3 p-lg-4">
-                                            <h3 class="text-left">Sugessions</h3>
-                                            <div class="suggestion-list">
-                                                <button type="button" class="btn white">New Sale</button>
-                                                <button type="button" class="btn white">Sales Promotion</button>
-                                                <button type="button" class="btn white">Lorem Ipsum</button>
-                                                <button type="button" class="btn white">Lorem Ipsum</button>
-                                            </div>
-                                        </div>
+                                        <!--<div class="suggestion p-3 p-md-3 p-lg-3">-->
+                                            <!--<h3 class="text-left">Sugessions</h3>-->
+                                            <!--<div class="suggestion-list">-->
+                                                <!--<button type="button" class="btn white">New Sale</button>-->
+                                                <!--<button type="button" class="btn white">Sales Promotion</button>-->
+                                                <!--<button type="button" class="btn white">Lorem Ipsum</button>-->
+                                                <!--<button type="button" class="btn white">Lorem Ipsum</button>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
                                     </div>
-                                    <div class="tab-pane animate fadeIn" id="tab-feedback">
-                                        <div class="feedback m-3 m-md-3 m-lg-4 text-right">
-                                            <div class="feedback-list">
-                                                <div class="row wrapper">
-                                                    <div class="col-2 col-md-2 col-lg-2 star">
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-                                                    <div class="col-2 col-md-2 col-lg-2 star">
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-                                                    <div class="col-2 col-md-2 col-lg-2 star">
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-                                                    <div class="col-2 col-md-2 col-lg-2 star">
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-                                                    <div class="col-2 col-md-2 col-lg-2 star">
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                    <div class="col-2 col-md-2 col-lg-2 rate">
-                                                        4.0
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <textarea class="form-control mb-3" rows="3" placeholder="Comments if any:"></textarea>
-                                            <button type="submit" class="btn primary">Save</button>
-                                        </div>
-                                    </div>
+                                    <!--<div class="tab-pane animate fadeIn" id="tab-feedback">-->
+                                        <!--<div class="feedback m-3 m-md-3 m-lg-3 text-right">-->
+                                            <!--<div class="feedback-list">-->
+                                                <!--<div class="row wrapper">-->
+                                                    <!--<div class="col-2 col-md-2 col-lg-2 star">-->
+                                                        <!--<i class="fa fa-star"></i>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-2 col-md-2 col-lg-2 star">-->
+                                                        <!--<i class="fa fa-star"></i>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-2 col-md-2 col-lg-2 star">-->
+                                                        <!--<i class="fa fa-star"></i>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-2 col-md-2 col-lg-2 star">-->
+                                                        <!--<i class="fa fa-star"></i>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-2 col-md-2 col-lg-2 star">-->
+                                                        <!--<i class="fa fa-star-o"></i>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-2 col-md-2 col-lg-2 rate">-->
+                                                        <!--4.0-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<textarea class="form-control mb-3" rows="3" placeholder="Comments if any:"></textarea>-->
+                                            <!--<button type="submit" class="btn primary">Save</button>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
                                     <div class="tab-pane animate fadeIn" id="tab-lead-qualifed">
                                         <div class="lead-list ml-3 ml-md-3 ml-lg-4 mr-3 mr-md-3 mr-lg-4">
                                             <div class="row wrapper">
@@ -683,11 +693,11 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="tab-content pl-3 pl-md-3 pl-lg-4 pr-3 pr-md-3 pr-lg-4 mb-3 mb-md-3 mb-lg-4">
-                                                <div class="tab-pane animate fadeIn text-muted text-left p-3 p-md-3 p-lg-4 border-top-0 active" id="tab-individual">
+                                            <div class="tab-content pl-3 pl-md-3 pl-lg-3 pr-3 pr-md-3 pr-lg-3 mb-3 mb-md-3 mb-lg-3">
+                                                <div class="tab-pane animate fadeIn text-muted text-left p-3 p-md-3 p-lg-3 border-top-0 active" id="tab-individual">
                                                     <div class="form-row">
                                                         <div class="form-group col-12 col-md-6 col-lg-6">
-                                                            <label for="inputCustomerName">Customer Name</label>
+                                                            <label for="inputCustomerName">Company Name</label>
                                                             <input type="email" class="form-control" id="inputCustomerName">
                                                         </div>
                                                         <div class="form-group col-12 col-md-6 col-lg-6">
@@ -724,17 +734,23 @@
                                                                 <option value="4">4</option>
                                                             </select>
                                                         </div>
+                                                        <div class="form-group col-lg-12 text-right">
+                                                            <button type="submit" class="btn primary">Save</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane animate fadeIn text-muted text-left p-3 p-md-3 p-lg-4 border-top-0" id="tab-company">
                                                     <div class="form-row">
                                                         <div class="form-group col-12 col-md-6 col-lg-6">
-                                                            <label for="inputCompanyCustomerName">Customer Name</label>
+                                                            <label for="inputCompanyCustomerName">Company Name</label>
                                                             <input type="email" class="form-control" id="inputCompanyCustomerName">
                                                         </div>
                                                         <div class="form-group col-12 col-md-6 col-lg-6">
                                                             <label for="inputCompanyOwnerName">Owner Name</label>
                                                             <input type="password" class="form-control" id="inputCompanyOwnerName">
+                                                        </div>
+                                                        <div class="form-group col-lg-12 text-right">
+                                                            <button type="submit" class="btn primary">Save</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -760,8 +776,8 @@
                                     </div>
                                     <div class="col-12 col-md-12 col-lg-6 text-center text-md-right text-lg-right">
                                         <button type="button" class="btn btn-visit" data-dismiss="modal">Visit Lead Page</button>
-                                        <button type="button" class="btn btn-end" data-dismiss="modal">End</button>
-                                        <button type="button" class="btn btn-lock" data-dismiss="modal">
+                                        <button type="button" class="btn btn-end" data-dismiss="modal">End Call</button>
+                                        <button type="button" class="btn btn-lock" data-dismiss="modal" data-toggle="tooltip" data-placement="bottom" title="Block lead">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17"><g><g><path fill="#fff" d="M11.278 6.2c1.137 0 2.062.925 2.062 2.063v6.16a2.065 2.065 0 0 1-2.062 2.064H2.58a2.065 2.065 0 0 1-2.062-2.063V8.263c0-1.138.925-2.063 2.062-2.063h.836V3.967c0-1.9 1.575-3.444 3.512-3.444 1.936 0 3.512 1.545 3.512 3.444V5.37H8.732V3.967c0-.957-.809-1.736-1.804-1.736s-1.804.779-1.804 1.736V6.2zm.354 2.063a.355.355 0 0 0-.354-.354H2.58a.354.354 0 0 0-.354.354v6.16c0 .196.158.356.354.356h8.698c.195 0 .354-.16.354-.355z"/></g><g><path fill="#fff" d="M6.929 9.41a1.117 1.117 0 0 0-.605 2.057v1.326a.604.604 0 0 0 1.208 0V11.47a1.118 1.118 0 0 0-.603-2.059z"/></g></g></svg>
                                         </button>
                                     </div>
@@ -772,6 +788,53 @@
                 </div>
             </div>
             <!--end modal view 3-->
+
+            <!--begin modal view 4-->
+            <button class="btn white" data-toggle="modal" data-target="#modal-view-4">Rate your call</button>
+
+            <div id="modal-view-4" class="modal modal-incoming" data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Rate your call</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center p-lg">
+                            <div class="form-group">
+                                <select id="example-fontawesome-o">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="form-group call-outcome">
+                                <label for="inputState2" class="d-block">Call Outcome</label>
+                                <select id="inputState2" class="custom-select">
+                                    <option>Misfit</option>
+                                    <option>Qualified</option>
+                                    <option>Reschedule</option>
+                                    <option>Interested</option>
+                                </select>
+                            </div>
+                            <div class="form-group call-outcome">
+                                <label for="inputState" class="d-block">Assign to</label>
+                                <select id="inputState" class="custom-select">
+                                    <option>Action 1</option>
+                                    <option>Action 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer outcome-button">
+                            <button type="button" class="btn btn-accept p-x-md" data-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end modal view 1-->
         </div>
         <!-- Footer -->
         <div class="content-footer white " id="content-footer">
@@ -947,6 +1010,7 @@
 <script src="../assets/js/ajax.js"></script>
 <script src="../assets/js/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.0/js/intlTelInput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
 <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input);

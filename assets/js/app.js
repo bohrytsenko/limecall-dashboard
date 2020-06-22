@@ -61,6 +61,22 @@ var app = app || {};
 
 $( document ).ready(function() {
 
+    // Tooltip
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    // Rate
+
+    $(function() {
+        $('#example-fontawesome-o').barrating({
+            theme: 'fontawesome-stars',
+            hoverState: false,
+            showSelectedRating: true
+        });
+    });
+
     $(function() {
         $('.calendar').pignoseCalendar({
             theme: 'blue',
