@@ -1545,6 +1545,108 @@ body .sl-icon > i {
     background-color: #b72525;
 }
 
+/*Login*/
+
+.login .container {
+    min-height: 100vh;
+}
+
+.login-header {
+    padding:  30px 0;
+}
+
+.login-header .logo img {
+    height: 35px;
+}
+
+.login-header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.login-header ul li {
+    margin-right: 30px;
+}
+
+.login-header ul li a {
+    font-size: 15px;
+}
+
+.login-main {
+    padding: 50px 0;
+}
+
+.login-main h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.login-main p {
+    font-size: 18px;
+}
+
+.login-main .btn-icon {
+    width: 270px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-main .btn-icon i {
+    left: 0;
+    justify-content: flex-start;
+    padding: 0 20px;
+    z-index: -1;
+}
+
+.login-main .btn-icon:hover {
+    color: white;
+}
+
+.login-main form {
+    max-width: 360px;
+    padding: 30px 0;
+    margin: 30px auto 0 auto;
+}
+
+.login-main form button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-main form p {
+    font-size: 12px;
+}
+
+.login-main form p a {
+    color: #007bff;
+}
+
+.login-footer {
+    padding: 30px 0;
+}
+
+.login-footer ul {
+    display: flex;
+    margin: 0 0 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.login-footer ul li {
+    margin-left: 30px;
+}
+
+.login-footer ul li a {
+    color: #007bff;
+}
+
+/*Meeting upcoming*/
+
+.meeting-item {
+    margin: 0 auto;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -1701,6 +1803,9 @@ body .sl-icon > i {
     .modal-progress .tabs .tab-content .contact-form .form-group input,
     .modal-progress .tabs .tab-content .contact-form .form-group select {
         height: 33px;
+    }
+    .login-header ul {
+        display: none;
     }
 }
 
