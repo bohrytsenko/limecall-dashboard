@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Widget - General</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.svg">
+    <!-- style -->
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/font-awesome/css/fontawesome-stars.css" type="text/css" />
+    <!-- build:css ../assets/css/app.min.css -->
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <!-- endbuild -->
+</head>
+<body>
+<div class="app" id="app">
+    <!-- ############ LAYOUT START-->
+    <!-- ############ Aside START-->
+    <div id="aside" class="app-aside fade box-shadow-x nav-expand white" aria-hidden="true">
+        <div class="sidenav modal-dialog dk white">
+            <!-- sidenav top -->
+            <div class="navbar lt">
+                <!-- brand -->
+                <a href="dashboard.html" class="navbar-brand">
+                    <img src="../assets/images/logo_sm.png" alt="">
+                </a>
+                <!-- / brand -->
+            </div>
+            <!-- Flex nav content -->
+            <div class="flex hide-scroll">
+                <div class="scroll">
+                    <div class="nav-stacked nav-active-theme" data-nav>
+                        <ul class="nav bg">
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard" >
+                                <a href="dashboard.html">
+                                    <span class="nav-icon"><i class="fa fa-dashboard"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Activities" >
+                                <a href="activities.html">
+                                    <span class="nav-icon"><i class="fa fa-star"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Users" >
+                                <a href="users.html">
+                                    <span class="nav-icon"><i class="fa fa-user"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Leads" >
+                                <a href="leads.html">
+                                    <span class="nav-icon"><i class="fa fa-address-book"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Widget" >
+                                <a href="widget.html">
+                                    <span class="nav-icon"><i class="fa fa-align-left"></i></span>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="" data-original-title="Settings" >
+                                <a href="settings.html">
+                                    <span class="nav-icon"><i class="fa fa-cog"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidenav bottom -->
+            <div class="no-shrink lt d-inline-flex justify-content-center flex-column">
+                <div class="nav-fold text-center position-relative">
+                    <a class="flex text-nowrap intro_show link_btm" data-toggle="dropdown">
+                         <span class="badge link_btm__badge badge-pill">
+                             <i class="fa fa-comment font-14"></i>
+                             <span class="badge badge-pill up theme border-0">5</span>
+                         </span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn intro show_bl pt-3 pb-0 ml-3">
+                        <div class="intro__top intro_top b-b pl-3 pb-4 pt-1 pr-3 d-flex justify-content-between align-items-center">
+                            <a class="intro_undo">
+                                <i class="fa fa-undo"></i>
+                            </a>
+                            <div class="intro_to">
+                                <a class="_600 d-flex align-items-center" data-toggle="modal" data-target="#m-md">
+                                    <span class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></span>
+                                    Intro to Limecall
+                                </a>
+                            </div>
+                            <!--<a class="intro_top__close" href="#/">-->
+                            <!--<i class="fa fa-times"></i>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="intro__list intro_list pt-3 pl-3 pr-4 pb-0">
+                            <p class="text-left">
+                                <label class="md-check line-through">
+                                    <input class="intro_check" type="checkbox" checked="">
+                                    <i class="blue"></i>
+                                    <span>Create Account</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Enter your first data</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Prioritize a feature toward an objective</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Link an insight to a related feature idea</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Add features to a release</span>
+                                </label>
+                            </p>
+                            <p class="text-left">
+                                <label class="md-check">
+                                    <input class="intro_check" type="checkbox">
+                                    <i class="blue"></i>
+                                    <span>Share your progress with a colleague</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="intro_congrats p-3">
+                            <img class="mb-3" src="../assets/img/img_congrats.svg" alt="Congrats" />
+                            <h6>You’re a champ!</h6>
+                            <p>Kudos on your first steps towards product excellence. Keep at it and become a pro!</p>
+                            <a class="btn btn-primary text-white" href="#/">Show me more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-fold text-center position-relative">
+                    <a class="flex text-nowrap resources_show link_btm" data-toggle="dropdown">
+                        <span class="badge link_btm__badge badge-pill"><i class="fa fa-question-circle font-14"></i></span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn resources show_bl pt-3 pb-0 ml-3">
+                        <div class="intro__top intro_top b-b pl-3 pb-4 pt-1 pr-3 d-flex justify-content-between align-items-center">
+                            <div class="intro_to">
+                                <p class="_600 mb-0 font-14">
+                                    Help is here when you need it.
+                                </p>
+                            </div>
+                            <!--<a class="intro_top__close" href="#/">-->
+                            <!--<i class="fa fa-times"></i>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="intro__list intro_list pt-3 pl-3 pr-4 pb-3">
+                            <div class="chat-list">
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Insights overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">2:58 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Features overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">3:51 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Roadmap overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">1:48 minutes video</p>
+                                    </div>
+                                </div>
+                                <div class="resources_bl form-group row mb-0 pt-2 pb-2">
+                                    <div class="col-3 col-md-3">
+                                        <a data-toggle="modal" data-target="#m-md" class="video_btn d-flex justify-content-center align-items-center position-relative mr-3"><i class="fa fa-play-circle text-primary font-18"></i></a>
+                                    </div>
+                                    <div class="col-9 col-md-9 resource_item">
+                                        <label class="mb-0 resource_title">Portal overview</label>
+                                        <p class="resource_p item-except text-sm text-muted h-1x mb-0">2:13 minutes video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resources_links b-t p-3">
+                            <ul class="text-left mb-0">
+                                <li>
+                                    <a href="#/">Limecall Portal</a>
+                                </li>
+                                <li>
+                                    <a href="#/">Keyboard shortcuts</a>
+                                </li>
+                                <li>
+                                    <a href="#/">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="nav-fold text-center position-relative">-->
+                <!--<a class="flex text-nowrap notification_show link_btm" data-toggle="dropdown">-->
+                <!--<span class="badge link_btm__badge badge-pill"><i class="fa fa-bell font-14"></i></span>-->
+                <!--</a>-->
+                <!--<div class="dropdown-menu w ml-3 mt-2 animate fadeIn notification show_bl">-->
+                <!--<div class="intro__top intro_top notification_top p-3 d-flex justify-content-between align-items-center">-->
+                <!--<div class="intro_to">-->
+                <!--<p class="_400 mb-0 notification__text">-->
+                <!--No notifications yet? <a class="text-primary font-12" href="users.html">Invite your colleagues to contribute!</a>-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="nav-fold text-center">
+                    <a class="flex text-nowrap p-2-3 link_btm" data-toggle="dropdown">
+                        <span class="link_btm__badge">
+                            <span class="badge badge-pill theme">Help</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu w ml-3 mt-2 animate fadeIn">
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-lightbulb-o text-primary"></i>
+                            <span>Suggest a Feature</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-play text-primary"></i>
+                            <span>Watch Tutorials</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-database text-primary"></i>
+                            <span>Knowledgebase</span>
+                        </a>
+                        <a class="dropdown-item" href="#/">
+                            <i class="fa fa-support text-primary"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Aside END-->
+    <!-- ############ Content START-->
+    <div id="content" class="app-content box-shadow-0" role="main">
+        <!-- Header -->
+        <div class="content-header white  box-shadow-2" id="content-header">
+            <div class="navbar navbar-expand-lg">
+                <div class="row justify-content-between w-100">
+                    <div class="col-6 col-md-6">
+                        <!-- btn to toggle sidenav on small screen -->
+                        <a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                                <path d="M80 304h352v16H80zM80 248h352v16H80zM80 192h352v16H80z" />
+                            </svg>
+                        </a>
+                        <!-- Page title -->
+                        <div class="navbar-text nav-title flex" id="pageTitle">Modals</div>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex justify-content-end">
+                        <ul class="d-none d-lg-flex navbar-nav mt-2 mt-lg-0 mx-0 mx-lg-2">
+                            <li class="mr-2 ml-2">
+                                <p class="mb-0 item-except text-sm text-muted">Balance</p>
+                                <p class="mb-0 text-primary"><span>$49.12</span></p>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <a href="#" class="btn btn-rounded btn-sm primary btn-theme d-none d-lg-block">
+                                    Upgrade
+                                </a>
+                            </li>
+                            <li class="mr-2 ml-2 d-flex align-items-center">
+                                <label class="ui-switch mt-1 mr-2 header_toggle">
+                                    <input type="checkbox" checked="">
+                                    <i></i>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-row order-lg-2">
+                            <!-- Notification -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3" data-toggle="dropdown">
+                                    <i class="fa fa-bell text-muted"></i>
+                                    <span class="badge badge-pill up danger">5</span>
+                                </a>
+                                <!-- dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right w-md animate fadeIn mt-2 p-0">
+                                    <div class="scrollable hover" style="max-height: 250px">
+                                        <div class="list">
+                                            <div class="list-item " data-id="item-10">
+                                          <span class="w-24 avatar circle blue">
+                                          <span class="fa fa-google"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Postiljonen</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-6">
+                                          <span class="w-24 avatar circle brown">
+                                          <span class="fa fa-envelope"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Rita Ora</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Homepage mockup design
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">13:23</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-1">
+                                          <span class="w-24 avatar circle grey">
+                                          <span class="fa fa-comment"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Summerella</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Send you a message
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">July 21</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-14">
+                                          <span class="w-24 avatar circle brown">
+                                          <span class="fa fa-bell"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Brielle Williamson</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Looking for some client-work
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">08:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-5">
+                                          <span class="w-24 avatar circle blue-grey">
+                                          <span class="fa fa-github"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Radionomy</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Competitive gaming ladders
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">09:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-item " data-id="item-4">
+                                          <span class="w-24 avatar circle pink">
+                                          <span class="fa fa-male"></span>
+                                          </span>
+                                                <div class="list-body">
+                                                    <a href="" class="item-title _500">Judith Garcia</a>
+                                                    <div class="item-except text-sm text-muted">
+                                                        Eddel upload a media
+                                                    </div>
+                                                    <div class="item-tag tag hide">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="item-date text-xs text-muted">12:05</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex px-3 py-2 b-t">
+                                        <div class="flex">
+                                            <span>6 Notifications</span>
+                                        </div>
+                                        <a href="setting.html">See all
+                                            <i class="fa fa-angle-right text-muted"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- / dropdown -->
+                            </li>
+                            <!-- User dropdown menu -->
+                            <li class="dropdown d-flex align-items-center">
+                                <a href="#" data-toggle="dropdown" class="d-flex align-items-center">
+                                  <span class="avatar w-32">
+                                    <img src="../assets/images/a7.jpg" alt="...">
+                                  </span>
+                                    <i class="fa fa-chevron-down ml-2 text-muted"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right w mt-2 animate fadeIn">
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#user" data-toggle-class="modal-open-aside" data-target="body">
+                                        <i class="fa fa-user text-primary"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-handshake-o text-primary"></i>
+                                        <span>Invite</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-cog text-primary"></i>
+                                        <span>Settings and Billing</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#/">
+                                        <i class="fa fa-puzzle-piece text-primary"></i>
+                                        <span>Integrations</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="signin.html">
+                                        <i class="fa fa-sign-out text-primary"></i>
+                                        Sign out
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Navarbar toggle btn -->
+                            <li class="d-lg-none d-flex align-items-center">
+                                <a href="#" class="mx-2" data-toggle="collapse" data-target="#navbarToggler">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                                        <path d="M64 144h384v32H64zM64 240h384v32H64zM64 336h384v32H64z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="content-main padding" id="content-main">
+            <!--begin modal view 1-->
+            <button class="btn white" data-toggle="modal" data-target="#modal-view-1">Incoming call</button>
+
+            <div id="modal-view-1" class="modal incoming" data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center">
+                        <div class="incoming-title">
+                            <h2>Incoming Call</h2>
+                        </div>
+                        <div class="incoming-source">
+                            Source: <img src="../assets/images/logo-google-ads.svg" alt="">
+                        </div>
+                        <div class="incoming-timer">
+                            <button class="btn btn-fw success">02:13</button>
+                        </div>
+                        <div class="incoming-ip">
+                            49.37.198.221
+                        </div>
+                        <div class="incoming-user">
+                            <span><img src="../assets/images/icon-user.svg" alt="Icon" /></span>
+                        </div>
+                        <div class="incoming-buttons">
+                            <ul>
+                                <li>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10.5" height="11" viewBox="0 0 21 22"><g><g><path fill="#90929b" d="M11.303-.125H9.482a3.191 3.191 0 0 0-3.188 3.188v9.104c0 .285.05.555.12.817l8.076-8.443V3.063a3.19 3.19 0 0 0-3.187-3.188z"/></g><g><path fill="#90929b" d="M9.482 15.355h1.82a3.191 3.191 0 0 0 3.189-3.188v-4.99L20.738.645a.456.456 0 0 0-.658-.63L.046 20.96a.454.454 0 1 0 .658.629l5.204-5.44c.718.626 1.637 1.027 2.663 1.027h1.366v3.643H6.75a.455.455 0 1 0 0 .911h7.285a.456.456 0 0 0 0-.911h-3.187v-3.643h1.366a4.103 4.103 0 0 0 4.098-4.098V8.525a.455.455 0 0 0-.911 0v4.553a3.19 3.19 0 0 1-3.187 3.188H8.57c-.782 0-1.484-.3-2.037-.772l.89-.93a3.123 3.123 0 0 0 2.058.791z"/></g><g><path fill="#90929b" d="M5.384 13.078V8.525a.455.455 0 0 0-.911 0v4.553c0 .566.116 1.105.325 1.597l.715-.749a3.162 3.162 0 0 1-.13-.848z"/></g></g></svg>
+                                        Mute
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10.5" viewBox="0 0 18 21"><g><g><path fill="#90929b" d="M7.032 20.305c0 .407-.386.738-.863.738H1.424c-.476 0-.863-.331-.863-.738V1.3c0-.408.387-.738.863-.738H6.17c.477 0 .863.33.863.738z"/></g><g><path fill="#90929b" d="M17.892 20.305c0 .407-.386.738-.863.738h-4.745c-.476 0-.863-.331-.863-.738V1.3c0-.408.387-.738.863-.738h4.745c.477 0 .863.33.863.738z"/></g></g></svg>
+                                        Hold
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><g><g><path fill="#90929b" d="M17.696 11.802a5.902 5.902 0 0 0-3.284-5.287v10.58a5.919 5.919 0 0 0 3.284-5.293z"/></g><g><path fill="#90929b" d="M-.036 7.861v7.881h5.254l6.567 6.568V1.294L5.218 7.861z"/></g><g><path fill="#90929b" d="M14.413.283v2.712c3.796 1.13 6.567 4.643 6.567 8.808 0 4.163-2.771 7.677-6.567 8.806v2.713c5.26-1.196 9.195-5.892 9.195-11.52 0-5.628-3.934-10.324-9.195-11.52z"/></g></g></svg>
+                                        Volume
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="10" viewBox="0 0 45 20"><g><g><path fill="#ed6351" d="M22.482 4.461c-2.913 0-5.645.654-8.376 1.526v6.758c0 .871-.364 1.526-1.093 1.961-1.821 1.09-3.46 2.398-4.916 4.142-.364.436-.728.654-1.275.654-.546 0-.91-.218-1.275-.654L.995 13.4c-.182-.437-.364-.873-.364-1.526 0-.654.182-1.09.546-1.526C6.64 4.025 14.287.101 22.482.101c8.194 0 15.842 3.924 21.305 10.246.364.436.546.871.546 1.526 0 .653-.182 1.09-.546 1.526l-4.552 5.45c-.364.435-.73.653-1.275.653-.546 0-.911-.218-1.274-.654-1.457-1.526-3.096-3.052-4.917-4.14-.546-.437-1.093-1.092-1.093-1.963V5.987c-2.55-.872-5.28-1.526-8.194-1.526z"/></g></g></svg>
+                                        End
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end modal view 1-->
+        </div>
+        <!-- Footer -->
+        <div class="content-footer white " id="content-footer">
+            <div class="d-flex p-3">
+                <span class="text-sm text-muted flex">Limecall © 2019</span>
+            </div>
+        </div>
+    </div>
+    <!-- ############ Content END-->
+    <!-- ############ LAYOUT END-->
+</div>
+<div class="modal fade" id="user" data-backdrop="true" aria-hidden="true">
+    <div class="modal-dialog modal-right white b-l">
+        <div class="d-flex flex-column h-100">
+            <div class="p-4 box">
+                <div class="pb-4 b-b _600">Change Profile Settings</div>
+                <form role="form" class="col-md-9 p-0 pb-5">
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>First Name</label></div>
+                        <div class="col-md-5"><input type="text" class="form-control" placeholder="Test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Email</label></div>
+                        <div class="col-md-5"><input type="email" class="form-control" placeholder="Test@test.test"></div>
+                    </div>
+                    <div class="pt-4 form-group row">
+                        <div class="col-md-7"><label>Password</label></div>
+                        <div class="col-md-5"><input type="password" class="form-control"></div>
+                    </div>
+                    <button type="submit" class="btn primary mt-2">Save changes</button>
+                </form>
+                <div class="pb-4 b-b _600">Delete your account</div>
+                <button type="submit" class="btn danger mt-4">Delete account</button>
+                <p class="item-except text-sm mt-2 text-muted h-1x">Delete your account and all of your source data. This is irreversible.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="m-md" class="modal video_modal" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0 pt-5">
+                <h5 class="modal-title w-100 text-center">Intro to Limecall</h5>
+                <a data-dismiss="modal" class="ml-auto video_modal__close">
+                    <span class="text-lg l-h-1x">×</span>
+                </a>
+            </div>
+            <div class="modal-body text-center p-lg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kWcHPKNjuFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequatur corporis dicta ducimus excepturi illum inventore itaque necessitatibus nisi, nobis non odit omnis praesentium quae rerum sit temporibus, veritatis.</p>
+                <a class="btn btn-primary text-white mb-4" href="#/">Let's get started</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+<div id="m-export" class="modal" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="ativities_modal__top">
+                    <h5>Export</h5>
+                </div>
+                <a href="#/" data-dismiss="modal"><i class="fa fa-close"></i></a>
+            </div>
+            <div class="modal-body text-center p-0">
+                <div class="col-12 col-lg-12 pt-3">
+                    <p class="text-left">Choose what you'd like to export and we will email you a link to the generated file.</p>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Agents</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <div class="form-group mr-2  activities_select">
+                                <select class="form-control" data-plugin="select2" data-option="{}">
+                                    <option value="Akshay">Akshay</option>
+                                    <option value="Steve">Steve</option>
+                                    <option value="Mark">Mark</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Status</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status" checked>
+                                    <i class="primary"></i>
+                                    Completed
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Failed
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Missed by user
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Missed by agent
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="status">
+                                    <i class="primary"></i>
+                                    Ongoing
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-lg-12 col-form-label text-left"><b>Score</b></label>
+                        <div class="col-12 col-lg-12 text-left">
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score" checked>
+                                    <i class="primary"></i>
+                                    Qualified
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score">
+                                    <i class="primary"></i>
+                                    Unqualified
+                                </label>
+                            </p>
+                            <p>
+                                <label class="md-check">
+                                    <input type="radio" name="score">
+                                    <i class="primary"></i>
+                                    Ready to buy
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn primary p-x-md" data-dismiss="modal">Export</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+<!-- build:js ../assets/js/app.min.js -->
+<!-- jQuery -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- core -->
+<script src="../libs/pace-progress/pace.min.js"></script>
+<script src="../libs/pjax/pjax.min.js"></script>
+<script src="../assets/js/lazyload.config.js"></script>
+<script src="../assets/js/lazyload.js"></script>
+<script src="../assets/js/plugin.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scrollto.js"></script>
+<script src="../assets/js/toggleclass.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/ajax.js"></script>
+<script src="../assets/js/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>
