@@ -30,25 +30,25 @@
 <section class="schedule-profile schedule-meeting">
     <div class="col-12 col-md-4 col-lg-4 profile">
         <div class="avatar">
-            <img src="../assets/images/avatar-rifad.png" alt="Avatar" />
+            <img src="../assets/images/avatar-alexandra.png" alt="Avatar" />
         </div>
         <div class="about">
-            <div class="about-name">Rifad</div>
+            <div class="about-name">Alexandra</div>
             <p class="text-white"> Senior Product Specialist at <a class="text-white" href="#/">OutreachPlus</a></p>
-            <a href="schedule.html" class="btn btn-fw white text-primary">View Profile</a>
+            <a href="schedule.html" class="btn btn-outline b-white text-white">View Profile</a>
         </div>
     </div>
     <div class="col-12 col-md-8 col-lg-8 form white">
         <div class="wrapper" id="step-1">
-            <div class="form-top b-b">
-                <p class="text-center text-md">Schedule time with Rifad</p>
+            <div class="form-top">
+                <p class="text-center text-md">Schedule time with Alexandra</p>
             </div>
             <div class="form-title">
                 <h4 class="text-center">Which day is best for you?</h4>
             </div>
             <div class="form-timezone">
                 <div class="form-group">
-                    <label>Timezone</label>
+                    <label>Timezone (default Europe/Prague)</label>
                     <select id="select2-single" data-plugin="select2" class="form-control">
                         <optgroup>
                             <option value="1">Pacific/Midway (SST) -11:00</option>
@@ -72,7 +72,7 @@
             </div>
             <div class="form-title text-center">
                 <h4>What time works best?</h4>
-                <p>Current Timezone (Europe/Prague)</p>
+                <p><img src="../assets/images/icon-timezone.svg" alt="Icon" /> Current Timezone (Europe/Prague)</p>
             </div>
             <div class="slot_div" id="slot_div">
                 <div class="slot-list">
@@ -137,11 +137,11 @@
         </div>
         <div class="wrapper" id="step-3">
             <div class="prev-step">
-                <a href="#step-3"><i class="fa fa-angle-left"></i></a>
+                <a href="#step-2"><i class="fa fa-angle-left"></i></a>
             </div>
             <div class="form-title text-center">
-                <h4>Confirm your new meeting</h4>
-                <p>All fields required</p>
+                <h4><img src="../assets/images/icon-confirm.svg" alt="Icon" /> Confirm your new meeting</h4>
+                <p>All felds are Required</p>
             </div>
             <div class="confirm-form">
                 <form>
@@ -157,18 +157,65 @@
                     <div class="form-group col-md-12">
                         <div class="confirm-block">
                             <div class="icon">
-                                <img src="../assets/images/icon-confirm.png" alt="Icon" />
+                                <img src="../assets/images/icon-calendar.svg" alt="Icon" />
                             </div>
                             <div class="confirm-info">
-                                <div class="date text-md">12:00pm — 12:30pm</div>
+                                <div class="date text-md d-flex justify-content-between align-items-center">
+                                    12:00pm — 12:30pm
+                                    <div class="edit">
+                                        <a href="schedule-meeting.html"><img src="../assets/images/icon-edit.svg" alt="">Edit</a>
+                                    </div>
+                                </div>
                                 <div class="date text-md">Thursday, June 18, 2020</div>
-                                <div class="location text-md">Current Timezone (Europe/Prague)</div>
+                                <div class="location text-md"><img src="../assets/images/icon-timezone.svg" alt="Icon" /> Current Timezone (Europe/Prague)</div>
                             </div>
-                            <input class="btn btn-fw primary w-100" type="submit" value="Book meeting">
+                            <a href="#step-4" class="btn-schedule btn btn-fw primary w-100 text-white">Schedule Call</a>
                         </div>
-
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="wrapper" id="step-4">
+            <div class="prev-step">
+                <a href="#step-3"><i class="fa fa-angle-left"></i></a>
+            </div>
+            <div class="form-title text-center">
+                <h4><img src="../assets/images/icon-allset.svg" alt="Icon" /> All set! We’ve scheduled this <br> meeting on your calendar</h4>
+                <p>Look out your meeting confrmation email at s.mathuerock@join.com</p>
+            </div>
+            <div class="confirm-form">
+                <div class="confirm-block mt-0">
+                    <div class="icon">
+                        <img src="../assets/images/icon-calendar.svg" alt="Icon" />
+                    </div>
+                    <div class="confirm-info">
+                        <div class="date text-md">
+                            12:00pm — 12:30pm
+                        </div>
+                        <div class="date text-md">Thursday, June 18, 2020</div>
+                            <div class="location text-md"><img src="../assets/images/icon-timezone.svg" alt="Icon" /> Current Timezone (Europe/Prague)</div>
+                        </div>
+                        <a href="#/" class="btn-schedule btn btn-fw primary w-100 text-white"><img src="../assets/images/icon-chat.svg" alt="Icon" /> Chat</a>
+                    </div>
+                    <div class="meeting-details">
+                        <h3>Meeting details:</h3>
+                        <ul>
+                            <li>
+                                <div class="avatar">
+                                    <img src="../assets/images/avatar-alexandra.png" alt="Avatar" />
+                                </div>
+                                <p>Alaxandra</p>
+                                <p>(Coolwinks.com)</p>
+                            </li>
+                            <li>
+                                <div class="avatar">
+                                    <img src="../assets/images/avatar-default.png" alt="Avatar" />
+                                </div>
+                                <p>s.mathuerock@join.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

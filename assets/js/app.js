@@ -61,6 +61,22 @@ var app = app || {};
 
 $( document ).ready(function() {
 
+    // Tag add
+
+    $('.add-tag').click(function () {
+        var rng = Math.round(Math.random()*4);
+        var rndmClass = [ 'teal', 'green', 'blue', 'brown', 'amber' ];
+        var inputVal = $(".input-tag").val();
+        var button = $('<button type="button" class="btn '+ rndmClass[rng] +'">' + inputVal + '</button>');
+        $(".tag-list").append(button);
+    });
+
+    // Remove tag
+
+    $(document).on("click", ".tag-list button" , function() {
+        $(this).remove();
+    });
+
     // Tooltip
 
     $(function () {
@@ -102,6 +118,17 @@ $( document ).ready(function() {
         $('#step-3').hide();
         $('#step-2').show();
     });
+
+    $('.btn-schedule').on('click', function () {
+        $('#step-3').hide();
+        $('#step-4').show();
+    });
+
+    $('#step-4 .prev-step a').on('click', function () {
+        $('#step-4').hide();
+        $('#step-3').show();
+    });
+
 
     // Lead popup
 

@@ -1348,19 +1348,42 @@ body .sl-icon > i {
     padding: 5px 15px;
 }
 
-.modal-progress .tabs .nav .nav-item .nav-link svg,
-.modal-progress .tabs .nav .nav-item .nav-link img,
-.modal-progress .tabs .nav .nav-item .nav-link i {
-    margin-left: 13px;
+.modal-progress .tabs .nav .nav-item .add {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.modal-progress .tabs .nav .nav-item .add:hover {
+    box-shadow: none;
+}
+
+.modal-progress .tabs .nav .nav-item .add .add-tag {
+    position: absolute;
+}
+
+.modal-progress .tabs .nav .nav-item .add input {
+    height: 31px;
+    border: 0;
+    color: #53a6fa;
+    padding-right: 30px;
+}
+
+.modal-progress .tabs .nav .nav-item .add input::placeholder {
+    color: #53a6fa;
+    opacity: 1;
+}
+
+.modal-progress .tabs .nav .nav-item .add button {
+    border: 0;
+    background-color: transparent;
+    right: 0;
 }
 
 .modal-progress .tabs .nav .nav-item .nav-link.active {
     color: white!important;
     box-shadow: none;
-}
-
-.modal-progress .tabs .nav .nav-item .nav-link.active svg path {
-    fill: white;
 }
 
 .modal-progress .tabs .nav .nav-item .dropdown-menu {
@@ -1431,6 +1454,31 @@ body .sl-icon > i {
     letter-spacing: 0.45px;
     padding: 5px 15px;
     margin: 0 13px 13px 0;
+    position: relative;
+}
+
+.modal-progress .tabs .tab-content .tag-list button:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-progress .tabs .tab-content .tag-list button:before {
+    position: absolute;
+    content: 'remove';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: red;
+    border-radius: .25rem;
+    border: 1px solid red;
+    color: white;
+    font-size: 12px;
 }
 
 .modal-progress .tabs .tab-content .tag-list button:last-of-type {
@@ -1860,7 +1908,6 @@ body .sl-icon > i {
     }
     .modal-progress .tabs .nav .nav-item .nav-link {
         font-size: 14px;
-        padding: 5px 10px;
     }
     .modal-progress .tabs .tab-content button[type="submit"] {
         height: 33px;

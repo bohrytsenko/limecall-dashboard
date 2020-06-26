@@ -114,6 +114,11 @@
   margin-bottom: 10px;
 }
 
+.schedule-profile .profile p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
 .schedule-profile .form {
   height: 100vh;
   padding-bottom: 40px;
@@ -135,19 +140,166 @@
   position: absolute;
   left: 0;
   top: 40px;
+  z-index: 1;
 }
 
 .schedule-profile .form .wrapper .form-top {
   padding: 40px 0 20px 0;
+  position: relative;
+}
+
+.schedule-profile .form .wrapper .form-top:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffffff 0%, #e1eef4 50.3703%, #ffffff 100%, #ffffff 100%);
+}
+
+.schedule-profile .form .wrapper .form-top p {
+  color: #394f5a;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.67px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .schedule-profile .form .wrapper .form-title {
   padding: 40px 0 20px 0;
 }
 
+.schedule-profile .form .wrapper .form-title h4 {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.schedule-profile .form .wrapper .form-title h4 img {
+  margin-right: 10px;
+}
+
+.schedule-profile .form .wrapper .form-title p {
+  color: #b7bdc6;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.schedule-profile .form .wrapper .form-title p img {
+  margin-right: 10px;
+}
+
+.slot-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.slot-list .slot {
+  width: 33%;
+}
+
+.slot-list .slot button {
+  border: 1px solid transparent;
+}
+
+.slot-list .slot button span {
+  color: #91919f;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.slot-list .slot button:hover {
+  border: 1px solid #e8f2ff;
+  background-color: white;
+  box-shadow: none;
+}
+
+.slot-list .slot button:hover span {
+  color: #1e87ff;
+  font-weight: 500;
+}
+
 .schedule-profile .form .wrapper .form-timezone {
-  max-width: 350px;
+  max-width: 280px;
   margin: 0 auto 40px auto;
+}
+
+.schedule-profile .form .wrapper .form-timezone label {
+  color: #2f3535;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+}
+
+.schedule-profile .form .wrapper .form-timezone .select2-container {
+  max-width: 100%;
+}
+
+.schedule-profile .form .wrapper .form-timezone .select2-selection {
+  border-color: #e1eef4;
+}
+
+.schedule-profile .form .wrapper .form-timezone .select2-selection__rendered {
+  background-image: url("../../assets/images/icon-timezone.svg");
+  background-repeat: no-repeat;
+  background-position: 3% center;
+  padding-left: 45px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form-calendar .pignose-calendar-top {
+  box-shadow: none!important;
+  border: 0!important;
+}
+
+.form-calendar .pignose-calendar {
+  width: 100%;
+  max-width: 450px;
+  box-shadow: none;
+  border: 0;
+  background-color: white!important;
+}
+
+.form-calendar .pignose-calendar-top-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white!important;
+}
+
+.form-calendar .pignose-calendar-top-date .pignose-calendar-top-month,
+.form-calendar .pignose-calendar-top-date .pignose-calendar-top-year {
+  color: #3f424f!important;
+  font-size: 19px!important;
+  font-weight: 400!important;
+  line-height: 27px;
+  margin: 0 3px!important;
+  text-transform: none;
+}
+
+.form-calendar .pignose-calendar-top .pignose-calendar-top-prev {
+  background-image: url("../../assets/images/icon-form-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-calendar .pignose-calendar-top .pignose-calendar-top-prev .icon-arrow-left:before {
+  content: ''!important;
+}
+
+.form-calendar .pignose-calendar-top .pignose-calendar-top-next {
+  background-image: url("../../assets/images/icon-form-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-calendar .pignose-calendar-top .pignose-calendar-top-next .icon-arrow-right:before {
+  content: ''!important;
 }
 
 .form-calendar .pignose-calendar.pignose-calendar-blue .pignose-calendar-top {
@@ -159,27 +311,36 @@
   font-family: FontAwesome!important;
 }
 
-.form-calendar .pignose-calendar .icon-arrow-left:before {
-  content: "\f053";
+.pignose-calendar-header .pignose-calendar-week {
+  color: #2f3535!important;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
 }
 
-.form-calendar .pignose-calendar .icon-arrow-right:before {
-  content: "\f054";
+.pignose-calendar-body .pignose-calendar-unit a {
+  color: #6d6d6d!important;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.pignose-calendar-body .pignose-calendar-unit-active a {
+  border-radius: 2px!important;
+  color: white!important;
+  box-shadow: none!important;
+  background-color: #1e87ff!important;
 }
 
 .schedule-profile .form .wrapper .confirm-block {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  border: 1px solid rgba(120, 130, 140, 0.2);
-  border-top: 4px solid #53a6fa;
+  border: 1px solid #e8f2ff;
   border-radius: 0.25rem;
-  padding-top: 20px;
+  padding-top: 13px;
+  margin-top: 40px;
 }
 
 .schedule-profile .form .wrapper .confirm-block .icon {
-  width: 150px;
-  margin-right: 15px;
   padding: 0 15px 20px 15px;
 }
 
@@ -188,7 +349,117 @@
 }
 
 .schedule-profile .form .wrapper .confirm-block .confirm-info {
-  padding: 0 15px 20px 15px;
+  padding: 0 15px 10px 0;
+}
+
+.schedule-profile .form .wrapper .confirm-block .confirm-info .text-md {
+  color: #4e5c65;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.schedule-profile .form .wrapper .confirm-block .confirm-info .text-md img {
+  margin-right: 5px;
+}
+
+.schedule-profile .form .wrapper .confirm-block .btn {
+  height: 35px;
+  background-color: #1e87ff;
+  font-size: 13px;
+}
+
+.confirm-form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.confirm-form .form-group input {
+  height: 45px;
+  border: 1px solid #e8f2ff;
+  color: #383838;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.confirm-form .form-group input::placeholder {
+  color: #383838;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.confirm-form .form-group input:focus {
+  border-color: #1e87ff;
+}
+
+.meeting-details {
+  border-top: 1px solid #e8f2ff;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.meeting-details h3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.meeting-details .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.meeting-details ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.meeting-details li {
+  color: #b7bdc6;
+  font-size: 13px;
+  font-weight: 400;
+  position: relative;
+  width: 50%;
+}
+
+.meeting-details li p {
+  margin: 0;
+}
+
+.meeting-details li:before {
+  position: absolute;
+  content: '';
+  width: 74%;
+  height: 1px;
+  left: 50px;
+  top: 25px;
+  background-color: #b7bdc6;
+}
+
+.meeting-details li:last-of-type:before {
+  display: none;
+}
+
+.meeting-details .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+  width: 50px;
+  height: 50px;
+  border: 1px dashed #b7bdc6;
+}
+
+.meeting-details .avatar img {
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 767px) {
@@ -225,12 +496,21 @@
     margin-bottom: 5px;
   }
   .schedule-meeting .form .wrapper .form-top {
-    padding: 15px 0 0 0;
+    padding: 15px 0;
   }
   .schedule-meeting .form .wrapper .form-title {
     padding: 15px 0;
   }
   .schedule-meeting .form .wrapper .prev-step {
     top: 20px;
+  }
+  .schedule-profile .form .wrapper .form-title h4 {
+    font-size: 16px;
+  }
+  .schedule-profile .form .wrapper .form-title img {
+    height: 25px;
+  }
+  .schedule-profile .form .wrapper .confirm-block .confirm-info {
+    padding: 0 15px 10px 15px;
   }
 }
